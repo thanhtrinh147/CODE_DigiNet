@@ -1,0 +1,248 @@
+﻿<L3:L3Page x:Class="D45D0180.D45F1022"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:L3="clr-namespace:Lemon3.Controls.DevExp;assembly=D99D0451"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys"
+        Title="Danh mục bảng giá theo công đoạn - D45F1022" Height="680" Width="1152" Loaded="L3Page_Loaded" PreviewKeyDown ="L3Page_PreviewKeyDown" >
+    <L3:L3Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/D45D0180;component/Templates/ControlTemplates.xaml" />
+                <ResourceDictionary Source="/D99D0451;component/Templates/Lemon3Templates.xaml" />
+                <ResourceDictionary Source="/D99D0451;component/Styles/Lemon3Style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </L3:L3Page.Resources>
+    <!--<L3:L3Page.DataContext>
+            
+    </L3:L3Page.DataContext>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        <!--Menu-->
+        <dxb:MainMenuControl Name="MainMenuControl" Grid.Row="0" >
+            <dxb:BarSubItem Name="tsbAdd" Content="Thêm" ItemClick="mnsAdd_Click"/>
+            <dxb:BarButtonItem Name="tsbEdit" Content="Sửa" ItemClick="mnsEdit_Click"/>
+            <dxb:BarButtonItem Name="tsbDelete" Content="Xóa" ItemClick="mnsDelete_Click"/>
+            <dxb:BarItemSeparator Name="ToolStripSeparator"/>
+            <dxb:BarButtonItem Name="tsbSysInfo" Content="Thông tin hệ thống" ItemClick="tsbSysInfo_Click" />
+            <dxb:BarItemSeparator Name="ToolStripSeparator10"/>
+        </dxb:MainMenuControl>
+
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" >
+                <L3:L3GridControl x:Name="tdbgM" AutoGenerateColumns="None"  FontWeight="Normal" EnableSmartColumnsGeneration="True" SelectionMode="Row" ClipboardCopyMode="None" Grid.RowSpan="2"   Margin="5,0,5,0" 
+                    PreviewKeyDown="tdbgM_KeyDown" 
+                    SelectedItemChanged="tdbgM_RowColChange" 
+                    PreviewMouseDoubleClick="tdbgM_DoubleClick">
+                    <dxg:GridControl.View>
+                        <dxg:TableView Name="tdbgMView" AllowPerPixelScrolling="False" ShowTotalSummary="False" ShowGroupPanel="True" ShowAutoFilterRow="True" AutoWidth="False" 
+                               NewItemRowPosition="None" VerticalScrollbarVisibility="Visible"  
+                               AllowEditing="False">
+                            <dxg:TableView.CellStyle>
+                                <Style x:Name ="customBackgroundBomItemChangeLog" BasedOn="{StaticResource {dxgt:GridRowThemeKey ResourceKey=LightweightCellStyle}}" TargetType="{x:Type dxg:LightweightCellEditor}">
+                                    <Style.Triggers>
+                                        <Trigger Property="dxg:DataViewBase.IsFocusedCell" Value="True">
+                                            <Setter Property="Background" Value="#FF54B491" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </dxg:TableView.CellStyle>
+                        </dxg:TableView>
+                    </dxg:GridControl.View>
+                    <!--Visible column-->
+                    <dxg:GridColumn x:Name="COLM_DateFrom" FieldName="DateFrom" Header="DateFrom" HorizontalHeaderContentAlignment="Center" Visible="False"/>
+                    <dxg:GridColumn x:Name="COLM_DateTo" FieldName="DateTo" Header="DateTo" HorizontalHeaderContentAlignment="Center" Visible="False" />
+                    <dxg:GridColumn x:Name="COLM_CreateUserID" FieldName="CreateUserID" Header="CreateUserID" HorizontalHeaderContentAlignment="Center"  Visible="False" />
+                    <dxg:GridColumn x:Name="COLM_CreateDate" FieldName="CreateDate" Header="CreateDate" HorizontalHeaderContentAlignment="Center" Visible="False"  />
+                    <dxg:GridColumn x:Name="COLM_LastModifyUserID" FieldName="LastModifyUserID" Header="LastModifyUserID" HorizontalHeaderContentAlignment="Center" Visible="False"  />
+                    <dxg:GridColumn x:Name="COLM_LastModifyDate" FieldName="LastModifyDate" Header="LastModifyDate" HorizontalHeaderContentAlignment="Center" Visible="False"  />
+                    <dxg:GridColumn x:Name="COLM_Mode" FieldName="Mode" Header="Mode" HorizontalHeaderContentAlignment="Center" Visible="False"  />
+                    <!---->
+                    <dxg:GridColumn x:Name="COLM_PriceListID" FieldName="PriceListID" Header="Mã bảng giá" HorizontalHeaderContentAlignment="Center" MinWidth="110" Width="110" />
+                    <dxg:GridColumn x:Name="COLM_PriceListName" FieldName="PriceListName" Header="Diễn giải" HorizontalHeaderContentAlignment="Center" Width="170" MinWidth="140" />
+                    <dxg:GridColumn x:Name="COLM_ValidFrom" FieldName="ValidFrom" Header="Hiệu lực từ" HorizontalHeaderContentAlignment="Center" Width="90" MinWidth="90" />
+                    <dxg:GridColumn x:Name="COLM_ValidTo" FieldName="ValidTo" Header="Hiệu lực đến" HorizontalHeaderContentAlignment="Center" Width="90" MinWidth="90" />
+                    <dxg:GridColumn x:Name="COLM_Disabled" FieldName="Disabled" Header="KSD" HorizontalHeaderContentAlignment="Center"  Width="90" MinWidth="90" AllowResizing="False"  Fixed="Right">
+                       <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxb:BarManager.DXContextMenu>
+                        <dxb:PopupMenu  Name="tdbgPopupMenu">
+                            <dxb:BarButtonItem Name="mnsAdd" Content="Thêm" ItemClick="mnsAdd_Click"/>
+                            <dxb:BarButtonItem Name="mnsEdit" Content="Sửa" ItemClick="mnsEdit_Click"/>
+                            <dxb:BarButtonItem  Name="mnsDelete" Content="Xóa" ItemClick="mnsDelete_Click"/>
+                            <dxb:BarButtonItem  Name="mnsExportToExcel" Content ="Xuất Excel" ItemClick="mnsExportToExcelMaster_Click" Glyph="pack://application:,,,/D45D0180;component/Bitmaps/ICONS/ExportToExcel.gif" />
+                            <dxb:BarButtonItem  Name="mnsSysInfo" Content ="Thông tin hệ thống" ItemClick="tsbSysInfo_Click"/>
+                    </dxb:PopupMenu>
+                    </dxb:BarManager.DXContextMenu>
+                </L3:L3GridControl>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="125"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <GroupBox Grid.Row="0" Margin="0,0,10,0" Height="120"  VerticalAlignment="Top">
+                    <!--<GroupBox.Header>-->
+                    <!--<TextBlock x:Name="tblFilter" Text="Chi tiết" FontWeight="Bold"/>-->
+                    <!--</GroupBox.Header>-->
+                    <Grid  x:Name="grpMaster" Margin="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <L3:L3Label x:Name="lblPriceListID" Content="Mã bảng giá" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3TextEdit x:Name="txtPriceListID" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3CheckEdit x:Name="chkDisabled" Grid.Column="5" Grid.ColumnSpan="2" Margin="0,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Center"  FontWeight="Normal"  Content="Không sử dụng" />
+                        <L3:L3Label x:Name="lblPriceListName" Grid.Row="1"  Content="Diễn giải" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3TextEdit x:Name="txtPriceListName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="9" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3Label x:Name="lblValid" Grid.Row="2" Content="Hiệu lực" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3DateEdit  x:Name ="dateValidFrom"   Grid.Row="2" Mask="dd/MM/yyyy"   Grid.Column ="1"   VerticalAlignment="Center" FontWeight="Normal" />
+                        <L3:L3Label x:Name="verticalLine" Grid.Row="2" Grid.Column="2" Content="-" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3DateEdit  x:Name ="dateValidTo" Grid.Row="2" Grid.Column ="3" Mask="dd/MM/yyyy"  VerticalAlignment="Center" FontWeight="Normal" />
+                        <L3:L3Label x:Name="lblBlockID" Grid.Row="2" Grid.Column="5" Content="Khối"  HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3LookUpEdit  Grid.Row="2" Grid.Column ="6"  x:Name ="tdbcBlockID" VerticalAlignment="Center" AutoPopulateColumns="False" AutoComplete="True" PopupWidth="250"
+				            ImmediatePopup="True" DisplayMember="BlockID" ValueMember="BlockID"  
+				            PopupContentTemplate="{DynamicResource tdbcBlockID}" IsPopupAutoWidth="False"  />
+                        <L3:L3Label x:Name="lblGroupProductID" Grid.Row="2" Grid.Column="8" Content="Nhóm sản phẩm" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3LookUpEdit  Grid.Row="2" Grid.Column ="9"  x:Name ="tdbcGroupProductID"   VerticalAlignment="Center" AutoPopulateColumns="False" AutoComplete="True" PopupWidth="250"
+				            ImmediatePopup="True" DisplayMember="GroupProductID" ValueMember="GroupProductID"
+                            SelectedIndexChanged="tdbcGroupProductID_SelectedIndexChanged"
+				            PopupContentTemplate="{DynamicResource tdbcGroupProductID}" IsPopupAutoWidth="False"  />
+                        <L3:L3Label x:Name="lblNote" Grid.Row="3" Content="Ghi chú" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <L3:L3TextEdit x:Name="txtNote" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="9" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                    </Grid>
+                    </GroupBox>
+                    <!--Grid-->
+                    <Grid Grid.Row="1" Background="Transparent" Margin="0">
+                        <dx:DXTabControl Name="tabControl" Margin="0" Grid.Row="3">
+                            <dx:DXTabItem Name="tab1" Header="Chi tiết">
+                                <!--<GroupBox.Header>
+                                <TextBlock x:Name="tblFilter" Text="Chi tiết" FontWeight="Regular"/>
+                            </GroupBox.Header>-->
+                                <L3:L3GridControl x:Name="tdbgD" Margin="-12 -12 -12 -12" AutoGenerateColumns="None" EnableSmartColumnsGeneration="True"  Grid.Row="1" SelectionMode="Row" 
+                                                  IsAllowDelete="True" >
+                                    <dxg:GridControl.View>
+                                        <dxg:TableView x:Name="tdbgDView" AllowPerPixelScrolling="True" ShowTotalSummary="True" AllowEditing="False" AutoWidth="True" VerticalScrollbarVisibility="Visible"  
+                                        ShowAutoFilterRow="True"  NewItemRowPosition="Bottom" ShowingEditor="tdbgD_ShowingEditor" 
+                                        PreviewKeyDown="tdbgD_KeyDown" RowUpdated="TdbgDView_RowUpdated" ValidateCell="TdbgDView_ValidateCell" CellValueChanging="tdbgDView_CellValueChanging" >
+                                            <dxg:TableView.RowStyle>
+                                                <Style TargetType="{x:Type dxg:RowControl}">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=Row.Stage}" Value="1">
+                                                            <Setter Property="Background" Value="LightGray"/>
+                                                        </DataTrigger>
+                                                        <!--<MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Path=Row.Stage}" Value="1"/>
+                                                                <Condition Binding="{Binding Path=SelectionState}" Value="None"/>
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Background" Value="Yellow"/>
+                                                        </MultiDataTrigger>-->
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </dxg:TableView.RowStyle>
+                                            <dxg:TableView.CellStyle>
+                                                <Style x:Name ="customBackgroundBomItemChangeLog1" BasedOn="{StaticResource {dxgt:GridRowThemeKey ResourceKey=LightweightCellStyle}}" TargetType="{x:Type dxg:LightweightCellEditor}">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="dxg:DataViewBase.IsFocusedCell" Value="True">
+                                                            <Setter Property="Background" Value="#FF54B491" />
+                                                        </Trigger>
+                                                        <!--<Trigger Property="dxg:ColumnBase.AllowEditing" Value="True">
+                                                            <Setter Property="Background" Value="White" />
+                                                        </Trigger>-->
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </dxg:TableView.CellStyle>
+                                        </dxg:TableView>
+                                    </dxg:GridControl.View>
+                                    <dxg:GridControl.Bands>
+                                        <dxg:GridControlBand x:Name="leftFIxInfoBand" Header="Thông tin phiếu" OverlayHeaderByChildren="True" AllowResizing="True" FixedWidth="False" >
+                                            <dxg:GridControlBand.HeaderStyle>
+                                                <Style TargetType="dxg:BandHeaderControl">
+                                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                                </Style>
+                                            </dxg:GridControlBand.HeaderStyle>
+                                            <dxg:GridColumn Name="COLD_OrderNo" FieldName="OrderNo"  Header="STT" AllowCellMerge="True"   HorizontalHeaderContentAlignment="Center" Width="40" MinWidth="40" Fixed="Left" Visible ="True" ReadOnly="True" >
+                                                <dxg:GridColumn.EditSettings>
+                                                    <dxe:TextEditSettings  HorizontalContentAlignment="Center" />
+                                                </dxg:GridColumn.EditSettings>
+                                            </dxg:GridColumn>
+                                            <dxg:GridColumn x:Name="COLD_PriceListID" FieldName="PriceListID" Header="Mã bảng giá" HorizontalHeaderContentAlignment="Center" Width="110" MinWidth="110"  Visible="False"/>
+                                            <dxg:GridColumn x:Name="COLD_Stage" FieldName="Stage" Header="Stage" HorizontalHeaderContentAlignment="Center" Width="110" MinWidth="110" Visible="False"/>
+                                            <dxg:GridColumn x:Name="COLD_ProductID" FieldName="ProductID" Header="Mã sản phẩm" HorizontalHeaderContentAlignment="Center" Width="110" Fixed="Left" MinWidth="110">
+                                                <dxg:GridColumn.EditSettings>
+                                                    <L3:L3LookUpEditSettings Name="tdbdProductID"  AutoComplete="True"
+                                                 ImmediatePopup="True" AutoPopulateColumns ="False" PopupWidth= "400"
+                                                 DisplayMember="ProductID" ValueMember="ProductID"
+                                                 PopupContentTemplate="{DynamicResource tdbdProductID}"/>
+                                                </dxg:GridColumn.EditSettings>
+                                            </dxg:GridColumn> 
+                                            <dxg:GridColumn x:Name="COLD_ProductName" ReadOnly="True"  FieldName="ProductName" Header="Tên sản phẩm" HorizontalHeaderContentAlignment="Center" Width="210" AllowEditing="False" AllowResizing="True" Fixed="Left" MinWidth="170" />
+                                        </dxg:GridControlBand>
+                                    </dxg:GridControl.Bands>
+
+                                    <dxb:BarManager.DXContextMenu>
+                                        <dxb:PopupMenu  Name="tdbgDPopupMenu">
+                                            <dxb:BarButtonItem  Name="mnsExportToExcelDetail" Content ="Xuất Excel" ItemClick="mnsExportToExcelDetail_Click" Glyph="pack://application:,,,/D45D0180;component/Bitmaps/ICONS/ExportToExcel.gif"/>
+                                            <dxb:BarButtonItem  Name="mnsImportData" Content="Import dữ liệu" Glyph="pack://application:,,,/D45D0180;component/Bitmaps/ICONS/ImportData.gif"  ItemClick="tsbImportData_Click"  />
+                                        </dxb:PopupMenu>
+                                    </dxb:BarManager.DXContextMenu>
+                                </L3:L3GridControl>
+                            </dx:DXTabItem>
+                        </dx:DXTabControl>
+                    </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <L3:L3CheckEdit x:Name="chkShowDisabled" Margin="5,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Center"  FontWeight="Normal"  Content="Hiển thị danh mục không sử dụng" EditValueChanged="chkShowDisabled_EditValueChanged"/>
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <L3:L3SimpleButton Name="btnSave" Content="Lưu"  Height="27" VerticalAlignment="Center"  Click="btnSave_Click" Margin=" 0 0 2 0" HorizontalAlignment="Right" Glyph="{dx:DXImage Image=Save_16x16.png}"/>
+                <L3:L3SimpleButton Name="btnNext" Content="Nhập tiếp" Margin=" 0 0 2 0" Height="27" HorizontalAlignment="Right" VerticalAlignment="Center" Glyph="{dx:DXImage Image=SaveAndNew_16x16.png}" Click="btnNext_Click"/>
+                <L3:L3SimpleButton x:Name="btnNotSave" Content="Không lưu" Margin=" 0 0 2 0"  Height="27" VerticalAlignment="Center" HorizontalAlignment="Right" Click="btnNotSave_Click" Glyph="{dx:DXImage Image=SaveAndClose_16x16.png}" />
+            </StackPanel>
+            <!--<StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="5 0 0 0">
+                -->
+            <!--<L3:L3SimpleButton Name="Hotkey" Content="Phím nóng"  Height="27"  Click="btnSave_Click" Margin=" 0 0 5 0" HorizontalAlignment="Right" Glyph="{dx:DXImage Image=Save_16x16.png}"/>-->
+            <!--
+                <L3:L3SimpleButton Name="btnExportToExcel" Content="Xuất excel" Margin=" 0 0 5 0" Height="27" HorizontalAlignment="Right" VerticalAlignment="top"  Click="btnExportToExcel_Click" Glyph="pack://application:,,,/D45D0180;component/Bitmaps/ICONS/ExportToExcel.gif" />
+            </StackPanel>-->
+        </Grid>
+    </Grid>
+</L3:L3Page>
+<!--<Style x:Name ="customBackground" TargetType="{x:Type dxg:RowControl}">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{DXBinding Expr='@c.RowHandle.Value'}" Value="1">
+                                                            <Setter Property="Background" Value="Red"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>-->
+<!--<Setter Property="Background" Value="Red"/>-->
+<!--</Style>-->

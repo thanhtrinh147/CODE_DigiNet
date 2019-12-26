@@ -1,0 +1,250 @@
+﻿<L3:L3Page
+        x:Class="D49D2250.D49F2140"
+        xmlns:L3="clr-namespace:Lemon3.Controls.DevExp;assembly=D99D0451"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+        xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking" 
+        Title="Đề nghị thu tiền - D49F2140" Height="680" Width="1024" 
+        Loaded="L3Window_Loaded" PreviewKeyDown="L3Page_PreviewKeyDown">
+    <L3:L3Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/D49D2250;component/Templates/ControlTemplates.xaml" />
+                <ResourceDictionary Source="/D99D0451;component/Templates/Lemon3Templates.xaml" />
+                <ResourceDictionary Source="/D99D0451;component/Styles/Lemon3Style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </L3:L3Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <dxb:MainMenuControl x:Name="MainMenuControl1" Grid.ColumnSpan="2">
+            <dxb:BarButtonItem x:Name="tsbListAll" Content="Liệt kê tất cả" ItemClick="tsbListAll_ItemClick" />
+            <dxb:BarItemSeparator />
+            <dxb:BarButtonItem x:Name="tsbSysInfo" Content="Thông tin hệ thống" ItemClick="tsbSysInfo_ItemClick"/>
+        </dxb:MainMenuControl>
+
+        <L3:L3GroupBox  Grid.Row="1" Margin="5,0,5,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <GroupBox.Header>
+                <TextBlock x:Name="grpCon" FontWeight="Bold">Điều kiện lọc</TextBlock>
+            </GroupBox.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <L3:L3CheckBox x:Name="chkPeriodID" Content="Kỳ" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" IsChecked="True" Click="chkPeriodID_Click" />
+                <!--<L3:L3LookUpEdit x:Name="tdbcPeriodFrom" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+                                 AutoPopulateColumns="False" AutoComplete="True" ImmediatePopup="True" PopupWidth="150"
+                                 DisplayMember="Period" ValueMember="Period" PopupContentTemplate="{DynamicResource PeriodIDStadard}"
+                                />-->
+                <L3:L3DateEdit x:Name="devdatePeriodFrom" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Mask="MM/yyyy" >
+                    <L3:L3DateEdit.StyleSettings>
+                        <dxe:DateEditPickerStyleSettings/>
+                    </L3:L3DateEdit.StyleSettings>
+                </L3:L3DateEdit>
+                <L3:L3Label x:Name="lblPeriod" Content="..." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
+                <!--<L3:L3LookUpEdit x:Name="tdbcPeriodTo" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+                                 AutoPopulateColumns="False" AutoComplete="True" ImmediatePopup="True" PopupWidth="150"
+                                 DisplayMember="Period" ValueMember="Period" PopupContentTemplate="{DynamicResource PeriodIDStadard}"
+                                />-->
+                <L3:L3DateEdit x:Name="devdatePeriodTo" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Mask="MM/yyyy" >
+                    <L3:L3DateEdit.StyleSettings>
+                        <dxe:DateEditPickerStyleSettings/>
+                    </L3:L3DateEdit.StyleSettings>
+                </L3:L3DateEdit>
+                <L3:L3Label x:Name="lblProjectName" Content="Dự án" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Margin="10,0,10,0"/>
+                <L3:L3LookUpEdit x:Name="tdbcProjectID" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+                                 AutoPopulateColumns="False" AutoComplete="True" ImmediatePopup="True" PopupWidth="350"
+                                 DisplayMember="ProjectName" ValueMember="ProjectID" PopupContentTemplate="{DynamicResource ProjectIDTemplate}" EditValueChanged="tdbcProjectID_EditValueChanged"
+                                 />
+                <L3:L3Label x:Name="lblContractNo" Content="Số hợp đồng" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Margin="10,0,10,0"/>
+                <L3:L3LookUpEdit x:Name="tdbcContractNo" Grid.Column="7" HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+                                 AutoPopulateColumns="False" AutoComplete="True" ImmediatePopup="True" PopupWidth="350"
+                                 DisplayMember="ContractNo" ValueMember="ContractID" PopupContentTemplate="{DynamicResource ContractIDTemplate}" EditValueChanged="tdbcContractNo_EditValueChanged"
+                                 />
+                <L3:L3Label x:Name="lblObjectID" Content="Khách hàng" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Margin="10,0,10,0"/>
+                <L3:L3LookUpEdit x:Name="tdbcObjectID" Grid.Column="9" HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+                                 AutoPopulateColumns="False" AutoComplete="True" ImmediatePopup="True" PopupWidth="350"
+                                 DisplayMember="ObjectName" ValueMember="ObjectID" PopupContentTemplate="{DynamicResource ObjectIDTemplate}"
+                                 />
+                <L3:L3SimpleButton x:Name="btnFilter" Content="Lọc" Grid.Column="10" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="27" Width="90" Margin="10,0,0,0" Click="btnFilter_Click" />
+
+            </Grid>
+        </L3:L3GroupBox>
+
+        <L3:L3GridControl Grid.Row="2" x:Name="tdbg" Margin="5,5,5,5" AutoGenerateColumns="None" EnableSmartColumnsGeneration="True" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+            <dxg:GridControl.ContextMenu>
+                <ContextMenu Name="ContextMenu1">
+                    <MenuItem Name="mnsVoucherDetail" Header="Chi tiết xuất hóa đơn" Click="mnsVoucherDetail_Click" />
+                    <MenuItem Name="mnsExportVoucher" Header="Xuất hóa đơn" Click="mnsExportVoucher_Click" />
+                    <MenuItem Name="mnsMakeVoucher" Header="Lập phiếu thu" Click="mnsMakeVoucher_Click" />
+                    <Separator />
+                    <MenuItem Name="mnsListAll" Header="Liệt kê tất cả" Click="mnsListAll_Click"/>
+                    <Separator />
+                    <MenuItem Name="mnsExportToExcel" Header="Xuất Excel" Click="mnsExporttoExcel_Click" />
+                    <Separator />
+                    <MenuItem Name="mnsSysInfo" Header="Thông tin hệ thống" Click="mnsSysInfo_Click" />
+
+                </ContextMenu>
+            </dxg:GridControl.ContextMenu>
+            <dxg:GridControl.View>
+                <dxg:TableView x:Name="tdbgView" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowFilterPanelMode="Never" ShowAutoFilterRow="False"
+                                              AllowEditing="True" AutoWidth="False" ShowGroupPanel="False" 
+                               FocusedRowChanged="tdbgView_FocusedRowChanged" ColumnHeaderClick="tdbgView_ColumnHeaderClick"/>
+            </dxg:GridControl.View>
+            <dxg:GridControl.Bands>
+                
+                <dxg:GridControlBand x:Name="bandChoose" Header="" OverlayHeaderByChildren="True"   AllowResizing="True" FixedWidth="False" Fixed="Left" >                   
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_IsSelected" FieldName="IsSelected" Header="Chọn" HorizontalHeaderContentAlignment="Center" Width="50" AllowEditing="True" AllowColumnFiltering="False">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                </dxg:GridControlBand>
+                
+                
+                <dxg:GridControlBand x:Name="Band1" Header="" OverlayHeaderByChildren="True" AllowResizing="True" FixedWidth="False" >
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_TransID" FieldName="TransID" Header="" HorizontalHeaderContentAlignment="Center" Width="50" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_TranMonth" FieldName="TranMonth" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_TranYear" FieldName="TranYear" Header="" HorizontalHeaderContentAlignment="Center" Width="10" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_CreateUserID" FieldName="CreateUserID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_CreateDate" FieldName="CreateDate" Header="" HorizontalHeaderContentAlignment="Center" Width="10" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_LastModifyUserID" FieldName="LastModifyUserID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_LastModifyDate" FieldName="LastModifyDate" Header="" HorizontalHeaderContentAlignment="Center" Width="50" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_ContractID" FieldName="ContractID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_ServiceTypeID" FieldName="ServiceTypeID" Header="" HorizontalHeaderContentAlignment="Center" Width="10" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_CurrencyID" FieldName="CurrencyID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_ExchageRate" FieldName="ExchageRate" Header="" HorizontalHeaderContentAlignment="Center" Width="10" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_ConversionFactor" FieldName="ConversionFactor" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_AccrualRevenueID" FieldName="AccrualRevenueID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_CashRequestID" FieldName="CashRequestID" Header="" HorizontalHeaderContentAlignment="Center" Width="10" Visible="False"/>
+                    <dxg:GridColumn x:Name="COL_InvoiceID" FieldName="InvoiceID" Header="" HorizontalHeaderContentAlignment="Center" Width="170" Visible="False"/>
+
+                    <dxg:GridColumn x:Name="COL_PeriodID" FieldName="PeriodID" Header="Kỳ" HorizontalHeaderContentAlignment="Center" Width="80" />
+                    <dxg:GridColumn x:Name="COL_ProjectID" FieldName="ProjectID" Header="Dự án" HorizontalHeaderContentAlignment="Center" Width="110"/>
+                    <dxg:GridColumn x:Name="COL_ProjectName" FieldName="ProjectName" Header="Tên dự án" HorizontalHeaderContentAlignment="Center" Width="140" />
+                    <dxg:GridColumn x:Name="COL_ContractNo" FieldName="ContractNo" Header="Số hợp đồng" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_ObjectID" FieldName="ObjectID" Header="Khách hàng" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_ObjectName" FieldName="ObjectName" Header="Tên khách hàng" HorizontalHeaderContentAlignment="Center" Width="140" />
+                    <dxg:GridColumn x:Name="COL_ProductID" FieldName="ProductID" Header="Mã dịch vụ" HorizontalHeaderContentAlignment="Center" Width="110"/>
+                    <dxg:GridColumn x:Name="COL_ProductName" FieldName="ProductName" Header="Tên dịch vụ" HorizontalHeaderContentAlignment="Center" Width="140" />
+                    <dxg:GridColumn x:Name="COL_ServiceTypeName" FieldName="ServiceTypeName" Header="Loại dịch vụ" HorizontalHeaderContentAlignment="Center" Width="110"/>
+                    <dxg:GridColumn x:Name="COL_UnitID" FieldName="UnitID" Header="ĐVT" HorizontalHeaderContentAlignment="Center" Width="110" />
+
+                    <dxg:GridColumn x:Name="COL_OQuantity" FieldName="OQuantity" Header="Số lượng" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_UnitPrice" FieldName="UnitPrice" Header="Đơn giá" HorizontalHeaderContentAlignment="Center" Width="110"/>
+                    <dxg:GridColumn x:Name="COL_OAmount" FieldName="OAmount" Header="Thành tiền" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_VATGroupID" FieldName="VATGroupID" Header="Nhóm thuế" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_VATRate" FieldName="VATRate" Header="Thuế suất" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_VATOAmount" FieldName="VATOAmount" Header="Thuế" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_TotalOAmount" FieldName="TotalOAmount" Header="TT sau thuế" HorizontalHeaderContentAlignment="Center" Width="110" />
+                    <dxg:GridColumn x:Name="COL_IsDetailInvoice" FieldName="IsDetailInvoice" Header="Xuất hóa đơn chi tiết" HorizontalHeaderContentAlignment="Center" Width="140" AllowEditing="False">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn x:Name="COL_Note" FieldName="Note" Header="Ghi chú" HorizontalHeaderContentAlignment="Center" Width="170" />
+
+                    <dxg:GridColumn x:Name="COL_Attack"  AllowAutoFilter="False" Header="Đính kèm" Width="80" HorizontalHeaderContentAlignment="Center">
+                        <dxg:GridColumn.CellTemplate>
+                            <DataTemplate>
+                                <dxe:ButtonEdit ShowText="False" AllowDefaultButton="False" ShowBorder="False" >
+                                    <dxe:ButtonInfo x:Name="btnAttack" Content="Đính kèm" ToolTip ="Đính kèm" Click="btnAttack_Click"/>
+                                    <!--GlyphKind="Search"-->
+                                </dxe:ButtonEdit>
+                            </DataTemplate>
+                        </dxg:GridColumn.CellTemplate>
+                    </dxg:GridColumn>
+                </dxg:GridControlBand>
+
+                <dxg:GridControlBand x:Name="bandCashRequest" Header="Đề nghị thu tiền" OverlayHeaderByChildren="False" HorizontalHeaderContentAlignment="Center"  AllowResizing="True" FixedWidth="False" >
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_IsCashRequest" FieldName="IsCashRequest" Header="Đã đề nghị thu tiền" HorizontalHeaderContentAlignment="Center" Width="140" AllowEditing="False">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn x:Name="COL_CashRequestNo" FieldName="CashRequestNo" Header="Số phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                    <dxg:GridColumn x:Name="COL_CashRequestDate" FieldName="CashRequestDate" Header="Ngày phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                </dxg:GridControlBand>
+                
+                <dxg:GridControlBand x:Name="bandReipts" Header="Phiếu thu" OverlayHeaderByChildren="False" HorizontalHeaderContentAlignment="Center"  AllowResizing="True" FixedWidth="False" >
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_IsReipts" FieldName="IsReipts" Header="Đã tạo phiếu thu" HorizontalHeaderContentAlignment="Center" Width="140" AllowEditing="False">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn x:Name="COL_ReiptsNo" FieldName="ReiptsNo" Header="Số phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                    <dxg:GridColumn x:Name="COL_ReiptsDate" FieldName="ReiptsDate" Header="Ngày phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                </dxg:GridControlBand>
+                
+                <dxg:GridControlBand x:Name="bandInvoice" Header="Xuất hóa đơn" OverlayHeaderByChildren="False" HorizontalHeaderContentAlignment="Center" AllowResizing="True" FixedWidth="False" >
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_IsInvoice" FieldName="IsInvoice" Header="Đã xuất hóa đơn" HorizontalHeaderContentAlignment="Center" Width="110" AllowEditing="False">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn x:Name="COL_InvoiceNo" FieldName="InvoiceNo" Header="Số phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                    <dxg:GridColumn x:Name="COL_InvoiceDate" FieldName="InvoiceDate" Header="Ngày phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                </dxg:GridControlBand>
+                <dxg:GridControlBand x:Name="bandAccrualRevenue" Header="Trích trước doanh thu" OverlayHeaderByChildren="False" HorizontalHeaderContentAlignment="Center" AllowResizing="True" FixedWidth="False" >
+                    <dxg:GridControlBand.HeaderStyle>
+                        <Style TargetType="dxg:BandHeaderControl">
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </dxg:GridControlBand.HeaderStyle>
+                    <dxg:GridColumn x:Name="COL_IsAccrualRevenue" FieldName="IsAccrualRevenue" Header="Đã trích trước doanh thu" HorizontalHeaderContentAlignment="Center" Width="140" AllowEditing="False" >
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:CheckEditSettings/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn x:Name="COL_AccrualRevenueNo" FieldName="AccrualRevenueNo" Header="Số phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                    <dxg:GridColumn x:Name="COL_AccrualRevenueDate" FieldName="AccrualRevenueDate" Header="Ngày phiếu" HorizontalHeaderContentAlignment="Center" Width="110" ReadOnly="True"/>
+                </dxg:GridControlBand>
+
+            </dxg:GridControl.Bands>
+        </L3:L3GridControl>
+
+    </Grid>
+</L3:L3Page>

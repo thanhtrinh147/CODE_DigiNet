@@ -1,0 +1,200 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D99D0341
+</name>
+</assembly>
+<members>
+<member name="M:D99D0341.D99X2223.ExportsData(C1.Win.C1TrueDBGrid.C1TrueDBGrid,C1.C1Excel.C1XLBook@,C1.C1Excel.XLSheet@,System.Int32,System.Int32)">
+	<summary>
+ Xuất dữ liệu cho lưới
+ </summary>
+	<param name="tdbg"></param>
+	<param name="book"></param>
+	<param name="sheet"></param>
+	<param name="iRowBegin">Dòng bắt đầu xuất dữ liệu</param>
+	<param name="iColBegin">Cột bắt đầu xuất dữ liệu. Mặc định là 0</param>
+	<remarks>Xuất dữ liệu giống y lưới</remarks>
+</member><member name="M:D99D0341.D99X2223.ExportsDataMerge(C1.Win.C1TrueDBGrid.C1TrueDBGrid,C1.C1Excel.C1XLBook@,C1.C1Excel.XLSheet@,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Xuất dữ liệu cho lưới có merge cột
+ </summary>
+	<param name="tdbg"></param>
+	<param name="book"></param>
+	<param name="sheet"></param>
+	<param name="iRowBegin">Dòng bắt đầu xuất dữ liệu</param>
+	<param name="iColBegin">Cột bắt đầu xuất dữ liệu</param>
+	<param name="iRowMerge">Số dòng được merge</param>
+	<param name="iColMerge">Số cột được merge</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99X2223.ExportExel_SendMail(System.String,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Xuất Excel theo lưới khi send mail ở User cảnh báo
+ </summary>
+	<param name="fileName">fileName cần xuất Excel. VD: Application.StartupPath + "\Data.xls"</param>
+	<param name="tdbg">Lưới cần xuất Excel</param>
+	<remarks></remarks>
+</member><member name="P:D99D0341.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D99D0341.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:D99D0341.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:D99D0341.Lemon3.D89.CallFormD89.CalTemplateID(System.Collections.ArrayList@,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.String,System.Int32,C1.Win.C1List.C1Combo,System.String[]@,System.Boolean,System.Int32)">
+	<summary>
+ Lưới truy vấn có sử dụng Mẫu truy vấn
+ </summary>
+	<param name="tdbg">Lưới truy vấn</param>
+	<param name="_formID">Mã form</param>
+	<param name="_moduleID">Module (xx)</param>
+	<param name="COL_Total">Số cột của lưới ban đầu (gán khi load form)</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="iSplit">Split hiện tại (Default =0 )</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.Lemon3.D89.CallFormD89.CalTemplateIDGeneral(System.Collections.ArrayList@,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.String,System.Int32,C1.Win.C1List.C1Combo,System.String[]@,System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ Lưới truy vấn có sử dụng Mẫu truy vấn (Hàm su dung Dac Thu cho D56)
+ </summary>
+	<param name="tdbg">Lưới truy vấn</param>
+	<param name="_formID">Mã form</param>
+	<param name="_moduleID">Module (xx)</param>
+	<param name="COL_Total">Số cột của lưới ban đầu (gán khi load form)</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="iSplit">Split hiện tại (Default =0 )</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.Lemon3.D89.CallFormD89.LoadSelection(System.Windows.Forms.GroupBox,C1.Win.C1List.C1Combo,System.Data.DataTable,System.Int32)">
+	<summary>
+ Load Tiêu thức Từ - Đến theo Mẫu truy vấn
+ </summary>
+	<param name="grpSelection">group chứa các tiêu thức</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="dtSelection">Dữ liệu chung của các tiêu thức</param>
+	<param name="iMax">Số tiêu thức</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D99D0341.Lemon3.D89.CallFormD89_o.CalTemplateID(System.Collections.ArrayList@,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.String,System.Int32,C1.Win.C1List.C1Combo,System.String[]@,System.Boolean,System.Int32)">
+	<summary>
+ Lưới truy vấn có sử dụng Mẫu truy vấn
+ </summary>
+	<param name="tdbg">Lưới truy vấn</param>
+	<param name="_formID">Mã form</param>
+	<param name="_moduleID">Module (xx)</param>
+	<param name="COL_Total">Số cột của lưới ban đầu (gán khi load form)</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="iSplit">Split hiện tại (Default =0 )</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.Lemon3.D89.CallFormD89_o.LoadSelection(System.Windows.Forms.GroupBox,C1.Win.C1List.C1Combo,System.Data.DataTable,System.Int32)">
+	<summary>
+ Load Tiêu thức Từ - Đến theo Mẫu truy vấn
+ </summary>
+	<param name="grpSelection">group chứa các tiêu thức</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="dtSelection">Dữ liệu chung của các tiêu thức</param>
+	<param name="iMax">Số tiêu thức</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D09U1111.MarkInvisibleColumn(System.Int32)">
+	<summary>
+ Đánh dấu Cột nào k hiển thị cho mảng vc (chỉ có mh chính gọi hàm này)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D99D0341.D99F2222._modeVB6">
+	<summary>
+ _modeVB6 = 1: màn hình VB6; 0 màn hình .NET
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99F2222.GetFormName">
+	<summary>
+ Lấy  FormName dùng để lưu mẫu xuất dữ liệu
+ Nếu FormID được truyền là một chuỗi các Form thì FormName được lấy phần tử đầu tiên của chuỗi đó
+ còn FormID được truyền từ 1 Form thì FormName là chính nó
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99F2224.GetFormName">
+	<summary>
+ Lấy  FormName dùng để lưu mẫu xuất dữ liệu
+ Nếu FormID được truyền là một chuỗi các Form thì FormName được lấy phần tử đầu tiên của chuỗi đó
+ còn FormID được truyền từ 1 Form thì FormName là chính nó
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D99D0341.DxxX0004.AskSave">
+	<summary>
+ Hỏi trước khi lưu tùy thuộc vào thiết lập ở phần Tùy chọn
+ </summary>
+</member><member name="M:D99D0341.DxxX0004.SaveOK">
+	<summary>
+ Thông báo khi lưu thành công tùy theo phần thiết lập ở tùy chọn
+ </summary>
+</member><member name="M:D99D0341.D99U1111.#ctor(System.Windows.Forms.Control,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable,System.Object,System.Boolean,System.Boolean,System.Object,System.String)">
+	<summary>
+ Khởi tạo User F12
+ </summary>
+	<param name="FormID"></param>
+	<param name="tdbgO"></param>
+	<param name="dtCaption">dtF12</param>
+	<param name="iMode">Mode dùng cho Hien thi chi tiet </param>
+	<param name="bStatusSave">Cho phep sang nut Luu khong?</param>
+	<param name="bUseTemplateInquiry">Su dung mau thi khong thay du lieu theo D91T2022</param>
+	<param name="iButton">Su dung Nut để an hien cot</param>
+	<param name="sDisplayTempID">An hien theo tung du lieu khac nhau nhu theo Loai nghiep vụ</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99U1111.AddColVisible(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable@,System.Object[],System.Object,System.Int32)">
+	<summary>
+ Thêm cột đang hiển thị trên lưới
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="dtCaption">table hiển thị F12</param>
+	<param name="ArrColObl">DS cột bắt buộc hiển thị</param>
+	<param name="iMode">Mode hiển thị. Mặc định chung là 0</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99U1111.GetOblCol(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Kiểm tra cột có bắt buộc chọn F12 theo Loại nghiệp vụ
+ </summary>
+	<param name="tdbg"></param>
+	<param name="COL_ID"></param>
+	<param name="tdbcTransTypeID"></param>
+	<param name="sRefixCheck">Tiền tố cột trong combo LNV. Cột cần kiểm tra: sRefixCheck + COL_ID</param>
+	<returns>trả về cột string nếu có bắt buộc</returns>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99U1111.GetOblCol(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,C1.Win.C1List.C1Combo)">
+	<summary>
+ Kiểm tra cột có bắt buộc chọn F12 theo Loại nghiệp vụ
+ </summary>
+	<param name="tdbg"></param>
+	<param name="COL_ID">Field cần kiểm tra</param>
+	<param name="tdbcTransTypeID">combo loại nghiệp vụ</param>
+	<returns>trả về cột string nếu có bắt buộc</returns>
+	<remarks>Cột trong LNV bắt buộc bắt đầu Check + COL_ID</remarks>
+</member><member name="M:D99D0341.D99U1111.GetOblCols(System.Collections.Generic.List{System.String},C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Lấy danh sách cột có màu bắt buộc nhập trên lưới
+ </summary>
+	<param name="tdbg"></param>
+	<returns>DS cột có màu bắt buộc nhập</returns>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99U0001.#ctor(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String,System.String,System.Boolean)">
+	<summary>
+ Hàm New dùng cho dropdown
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="sFieldNameDropdown">FieldName của cột Tên trên dropdown</param>
+	<remarks></remarks>
+</member><member name="M:D99D0341.D99U0001.#ctor(C1.Win.C1List.C1Combo@,System.Windows.Forms.TextBox,System.Boolean)">
+	<summary>
+ Hàm New dùng cho combo
+ </summary>
+	<param name="tdbc">Combo cần filter</param>
+	<param name="ctrlName">control hiển thị Name khi chọn combo, bắt buộc phải là txt[FieldName]</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

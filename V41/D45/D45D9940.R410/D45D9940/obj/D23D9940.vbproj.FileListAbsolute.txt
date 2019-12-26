@@ -1,0 +1,9 @@
+C:\LEMON3\D23D9940.dll
+C:\LEMON3\D23D9940.pdb
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\ResolveAssemblyReference.cache
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.vbproj.ResolveComReference.cache
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.Resources.resources
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.vbproj.GenerateResource.Cache
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.dll.licenses
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.dll
+D:\Code ho tro\D23D9940.R390\D23D9940\obj\Release\D23D9940.pdb

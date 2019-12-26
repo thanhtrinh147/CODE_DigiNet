@@ -1,0 +1,342 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D99D1041
+</name>
+</assembly>
+<members>
+<member name="M:Lemon3.Functions.CommonControl.AddControlInQueue(System.Windows.Forms.Control)">
+	<summary>
+ Hàm hỗ trợ cho hàm FocusControlInTabControl
+ </summary>
+	<param name="ctrl">Control cần Focus</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Functions.CommonControl.FocusControlInForm(System.Windows.Forms.Control)">
+	<summary>
+ Focus control trong TabControl, hỗ trợ control ở trong nhiều cấp TabControl.
+ </summary>
+	<param name="ctrl"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.CheckEmptyControl.CheckReadOnly(System.Windows.Forms.Control)">
+	<summary>
+ Kiểm tra control có ReadOnly hay không ?
+ </summary>
+	<param name="ctrl"></param>
+	<returns>True: Có, False: Không</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F6020_ReturnField(System.String,System.String,System.Int32)">
+	<summary>
+ Chọn giá trị tiêu thức
+ </summary>
+	<param name="sSQLSelection"></param>
+	<param name="sFormIDPermission"></param>
+	<param name="iModeSelect"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F6020_DescriptionContent(System.String,System.String)">
+	<summary>
+ Chọn nội dung diễn giải
+ </summary>
+	<param name="sModule"></param>
+	<param name="sFormIDPermission"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F0120_AddNew(System.String,System.String)">
+	<summary>
+ Thêm mới Object
+ </summary>
+	<param name="sObjectTypeID"></param>
+	<param name="sFormIDPermission"></param>
+	<returns>Mã Object mới</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F0120_AddNew(System.String,System.String,System.String@,System.Boolean@)">
+	<summary>
+ Thêm mới Object, Trả ra mã nhân viên mới và bSaved
+ </summary>
+	<param name="sObjectTypeID"></param>
+	<param name="sFormIDPermission"></param>
+	<param name="sObjectID"></param>
+	<param name="bSaved"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F1655_FromHistory(System.Windows.Forms.Form,System.String,System.String,System.String,System.String)">
+	<summary>
+ Gọi Form D91F1655 từ nút Lịch sử 
+ </summary>
+	<param name="fForm">Form đang gọi</param>
+	<param name="sAuditCode">Mã AuditCode</param>
+	<param name="sAuditItemID">Mã AditItemID</param>
+	<param name="sMode">Mode</param>
+	<param name="sFormIDPermission">Form phân quyền</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.CallFormD91.CallFormD91F1655(System.Windows.Forms.Form,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Gọi Form D91F1655
+ </summary>
+	<param name="fForm">Form đang gọi</param>
+	<param name="sAuditCode">Mã AuditCode</param>
+	<param name="sAuditItemID">Mã AditItemID</param>
+	<param name="sMode">Mode</param>
+	<param name="sFormIDPermission">Form phân quyền</param>
+	<param name="sCreateUserID">UserID: VD: tdbg2.Columns(COL2_CreateUserID).Text</param>
+	<param name="sCreateDate">Ngày tạo: VD: tdbg2.Columns(COL2_CreateDate).Text</param>
+	<param name="sEventID">Event ID: VD: tdbg.Columns(COL_EventID).Text </param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.LoadData.ObjectID.ReturnTableObjecID(System.Boolean,System.String)">
+	<summary>
+  Lấy dữ liệu table Object
+ </summary>
+	<param name="bDisable">Use Disabled = 0</param>
+	<param name="sWhere">add condition Where</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.LoadData.ObjectID.LoadObjectID(System.Windows.Forms.Control,System.Data.DataTable@)">
+	<summary>
+ Load combo Đối tượng (có đk Disabled =0)
+ </summary>
+	<param name="Ctrl"></param>
+	<param name="dtObjectID">bảng Object trả về. Nếu = nothing sẽ tự động load theo server</param>
+	<remarks>Out dtObjectID</remarks>
+</member><member name="F:Lemon3.Data.LoadData.ObjectID.I">
+	<summary>
+ Nếu không cần New class này thì vẫn dùng được các hàm
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.LoadData.ObjectID.LoadObjectIDView(System.Windows.Forms.Control,System.Data.DataTable@)">
+	<summary>
+ Load combo Đối tượng (Truy vấn / Báo cáo) không có điều kiện Disabled =0
+ </summary>
+	<param name="Ctrl"></param>
+	<param name="dtObjectID">bảng Object trả về. Nếu = nothing sẽ tự động load theo server</param>
+	<remarks>Out dtObjectID</remarks>
+</member><member name="M:D99F5555.#ctor(C1.Win.C1List.C1Combo@,System.Data.DataTable)">
+	<summary>
+ Hàm New dùng cho combo
+ </summary>
+	<param name="tdbc">Combo cần filter</param>
+ ''' <param name="dtCombo">Nguồn load dữ liệu cho Combo cần filter</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D89.CallFormD89.CalTemplateID(System.Collections.ArrayList@,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.String,System.Int32,C1.Win.C1List.C1Combo,System.String[]@,System.Boolean,System.Int32)">
+	<summary>
+ Lưới truy vấn có sử dụng Mẫu truy vấn
+ </summary>
+	<param name="tdbg">Lưới truy vấn</param>
+	<param name="_formID">Mã form</param>
+	<param name="_moduleID">Module (xx)</param>
+	<param name="COL_Total">Số cột của lưới ban đầu (gán khi load form)</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="iSplit">Split hiện tại (Default =0 )</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D89.CallFormD89.LoadSelection(System.Windows.Forms.GroupBox,C1.Win.C1List.C1Combo,System.Data.DataTable,System.Int32)">
+	<summary>
+ Load Tiêu thức Từ - Đến theo Mẫu truy vấn
+ </summary>
+	<param name="grpSelection">group chứa các tiêu thức</param>
+	<param name="tdbcTemplateID">combo Mẫu truy vấn</param>
+	<param name="dtSelection">Dữ liệu chung của các tiêu thức</param>
+	<param name="iMax">Số tiêu thức</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Lemon3.Controls.clsCheckGridValid.CheckTaxTolerance(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Kiểm tra nhập ngoài biên độ thuế cho cả lưới
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="COL_Amount">Cột Tiền NT hoặc Tiền QĐ</param>
+	<param name="COL_VATAmount">Cột Thuế NT hoặc QĐ</param>
+	<param name="COL_VATGroupID">Cột nhóm thuế</param>
+	<param name="COL_RateTax">Cột tỷ lệ thuế</param>
+	<param name="COL_ExceedTaxAmount">Cột biên độ thuế</param>
+	<returns> Dòng vi phạm, nếu không vi phạm trả ra -1</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.clsCheckGridValid.CheckTaxTolerance(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Kiểm tra nhập ngoài biên độ thuế cho từng dòng trên lứoi
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="row">Dòng</param>
+	<param name="iCheckTaxTolerance">Giá trị thiết lập tại D91</param>
+	<param name="COL_Amount">Cột Tiền NT hoặc Tiền QĐ</param>
+	<param name="COL_VATAmount">Cột Thuế NT hoặc QĐ</param>
+	<param name="COL_VATGroupID">Cột nhóm thuế</param>
+	<param name="COL_RateTax">Cột tỷ lệ thuế</param>
+	<param name="COL_ExceedTaxAmount">Cột biên độ thuế</param>
+	<returns>= False nếu vi phạm, True nếu nhập đúng</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.clsCheckGridValid.CheckTaxTolerance(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra nhập ngoài biên độ thuế cho cả lưới
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="COL_Amount">Cột Tiền NT hoặc Tiền QĐ</param>
+	<param name="COL_VATAmount">Cột Thuế NT hoặc QĐ</param>
+	<param name="COL_VATGroupID">Cột nhóm thuế</param>
+	<param name="COL_RateTax">Cột tỷ lệ thuế</param>
+	<param name="COL_ExceedTaxAmount">Cột biên độ thuế</param>
+	<returns> Dòng vi phạm, nếu không vi phạm trả ra -1</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.clsCheckGridValid.CheckTaxTolerance(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra nhập ngoài biên độ thuế cho từng dòng trên lứoi
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="row">Dòng</param>
+	<param name="iCheckTaxTolerance">Giá trị thiết lập tại D91</param>
+	<param name="COL_Amount">Cột Tiền NT hoặc Tiền QĐ</param>
+	<param name="COL_VATAmount">Cột Thuế NT hoặc QĐ</param>
+	<param name="COL_VATGroupID">Cột nhóm thuế</param>
+	<param name="COL_RateTax">Cột tỷ lệ thuế</param>
+	<param name="COL_ExceedTaxAmount">Cột biên độ thuế</param>
+	<returns>= False nếu vi phạm, True nếu nhập đúng</returns>
+	<remarks></remarks>
+</member><member name="T:Lemon3.Controls.clsCheckGridValid">
+	<summary>
+ Lớp bao gồm những hàm Shared kiểm tra nhập hợp lệ trên lưới.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Lemon3.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:Lemon3.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:Lemon3.DxxExx40.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:Lemon3.DxxExx40.FormPermission">
+	<summary>
+ Form Phân quyền cho màn hình được gọi 
+ </summary>
+</member><member name="M:Lemon3.DxxExx40.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:Lemon3.DxxExx40.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="M:Lemon3.Controls.FilterDropdown.UseFilterDropdown(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32[])">
+	<summary>
+ Khái báo sử dụng tính năng FilterDropdown (Mặc định check D91T0025)
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="iCol">Cột cần filter</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterDropdown.UseFilterDropdown(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String[])">
+	<summary>
+ Khái báo sử dụng tính năng FilterDropdown
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="sCol">Cột cần filter</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterDropdown.CheckKeydownFilterDropdown(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Kiểm tra phím gọi từ sự kiện Keydown của lưới
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterDropdown.FilterDropdown(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.EventArgs,C1.Win.C1TrueDBGrid.C1TrueDBDropdown)">
+	<summary>
+ Tìm kiếm theo tên cho dropdown
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="e"></param>
+	<param name="tdbd">Dropdown cần filter</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterDropdown.FilterDropdown(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.EventArgs,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Tìm kiếm theo tên cho dropdown
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="e"></param>
+	<param name="tdbd">Dropdown cần filter</param>
+	<param name="bAllowAddRow">Cho phép chọn để thêm dòng (VD: Mã hàng)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCheckCombo.GetValueServer(C1.Win.C1List.C1Combo)">
+	<summary>
+ Lấy giá trị trả về của combo Nối thêm () và ' của các phần từ. Exp: A;B -&gt; ('A','B')
+ </summary>
+	<param name="tdbc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCheckCombo.GetValueTDBCDivision(C1.Win.C1List.C1Combo)">
+	<summary>
+ Hàm này chỉ áp dụng cho Combo là Division 
+ </summary>
+	<param name="tdbcDivision"></param>
+	<returns>= %: Chọn nhiều đơn vị, = đơn vị đã chọn nếu chon 1 đơn vị </returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCheckCombo.GetValueServer(System.String)">
+	<summary>
+ Nối thêm () và ' của các phần từ. Exp: A;B -&gt; ('A','B')
+ </summary>
+	<param name="sValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCheckCombo.SetValue(C1.Win.C1List.C1Combo@,System.Object)">
+	<summary>
+ Gán giá trị cho combo có check chọn theo giá trị truyền vào
+ </summary>
+	<param name="tdbc"></param>
+	<param name="sValue">Giá trị được gán lên combo</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCheckCombo.CheckValueExistCombo(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Kiểm tra giá trị tồn tại trong combo theo mảng check chọn
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.FilterCombo.LoadtdbcObjectID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String)">
+	<summary>
+ Load Đối tượng theo Loại đối tượng
+ </summary>
+	<param name="tdbcObjectID">Combo Đối tượng</param>
+	<param name="dtObjectID">Dữ liệu tất cả ObjectID</param>
+	<param name="sObjectTypeID">Giá trị Loại Đối tượng đang chọn</param>
+	<remarks>Trường hợp Loại ĐT =%,'',-1 thì không cho Thêm mới</remarks>
+</member><member name="M:Lemon3.Controls.FilterControl.FilterCombo(C1.Win.C1List.C1Combo,System.EventArgs,System.Boolean@,System.Boolean,System.Boolean,System.String,System.Boolean,System.String,System.Collections.Generic.Dictionary{C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo},System.Int32)">
+	<summary>
+ Tìm kiếm theo tên cho combo
+ </summary>
+	<param name="tdbc">Combo cần filter</param>
+	<param name="e"></param>
+	<param name="IsFilterNew">Kiểm tra trường LoadFormNotINV của bảng D91T0025</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

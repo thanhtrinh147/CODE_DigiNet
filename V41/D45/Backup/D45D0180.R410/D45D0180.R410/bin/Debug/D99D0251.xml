@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D99D0251
+</name>
+</assembly>
+<members>
+<member name="T:Lemon3.Data.EnumCheckStore">
+	<summary>
+ Dinh nghĩa giá trị (cột Status) cần Rollback Transaction cho hàm CheckStorebyTrans
+ </summary>
+</member><member name="M:Lemon3.L3OptionBase.SQLValueD91T8889_Radio(System.String,System.Windows.Forms.GroupBox,System.Text.StringBuilder@)">
+	<summary>
+ Lấy giá trị của Radio trong 1 group
+ </summary>
+	<param name="Dxx"></param>
+	<param name="grpRadio">group chứa radio</param>
+	<returns>SQL lưu dữ liệu</returns>
+	<remarks>group lấy Name làm FieldName, và Text làm Description. Value là số cuối cùng của Radio</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLSpecialCharactor(System.String)">
+	<summary>
+ Thay các dấu []%* thành các ký tự hợp lệ khi tìm kiếm trên Datatable hay lưu xuống server
+ </summary>
+	<param name="sText">Chuỗi Text truyền vào</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLString(System.String)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLString(System.String,System.Boolean)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLString(System.Object)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLString(System.Boolean)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Bool">Giá trị bool, nếu True sẽ chuyển thành 1, ngược lại chuyển thành 0</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLString(System.Object,System.Boolean)">
+	<summary>
+ Chuyển chuỗi sang UNICODE
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDecimal(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số Decimal để lưu vào database
+ </summary>
+	<param name="Number"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDecimal(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số Decimal để lưu vào database
+ </summary>
+	<param name="Number"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLNumber(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLNumber(System.Boolean)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLNumber(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLNumber(System.String,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+	<param name="StringFormat">Format số trước khi insert</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLNumber(System.Object,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+	<param name="StringFormat">Format số trước khi insert</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLMoney(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLMoney(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLMoney(System.String,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLMoney(System.Object,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.ConvertMoney(System.String,System.String)">
+	<summary>
+ Trả về số dạng Double để tính toán
+ </summary>
+	<param name="Number">Số để tính toán</param>
+	<param name="sFormat">Chuỗi format</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.ConvertMoney(System.Object,System.String)">
+	<summary>
+ Trả về số dạng Double để tính toán
+ </summary>
+	<param name="Number">Số để tính toán</param>
+	<param name="sFormat">Chuỗi format</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.DateSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để gọi sự kiện FilterChange của lưới ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.DateSave(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để gọi sự kiện FilterChange của lưới ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLClient.DateSaveTime(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để gọi sự kiện FilterChange của lưới ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateTimeSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy HH:mm:ss
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateTimeSave(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy HH:mm:ss
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateShow(System.Object)">
+	<summary>
+ Trả về kiểu chuỗi ngày format theo dạng dd/MM/yyyy
+ </summary>
+	<param name="Date">Kiểu ngày truyền vào</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateShow(System.String)">
+	<summary>
+ Trả về kiểu chuỗi ngày format theo dạng dd/MM/yyyy
+ </summary>
+	<param name="Date">Kiểu ngày truyền vào</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.SQLDateTimeShow(System.Object)">
+	<summary>
+ Trả về kiểu chuỗi ngày format theo dạng dd/MM/yyyy hh:mm:ss
+ </summary>
+	<param name="Date">Kiểu ngày truyền vào</param>
+</member><member name="M:Lemon3.Data.L3SQLClient.ReturnDataRow(System.Object,System.String)">
+	<summary>
+ Lấy dòng dữ liệu trong Table
+ </summary>
+	<param name="dtSource">Nguồn dữ liệu cần lọc. Truyền vào Datable or Combo.DataSource or Dropdown.DataSource</param>
+	<param name="sWhere">Điều kiện lọc</param>
+	<returns>dòng dữ liệu đầu tiên tìm được</returns>
+	<remarks>Trả về nothing nếu không tồn tại</remarks>
+</member><member name="M:Lemon3.Functions.L3ConvertType.L3String(System.Object)">
+	<summary>
+ Kiểm tra object truyền vào, nếu IsDBNull hoặc nothing sẽ trã về ''
+ </summary>
+	<param name="Value">Giá trị truyền vào và trả ra</param>
+	<returns></returns>
+</member><member name="M:Lemon3.Functions.L3ConvertType.Number(System.String)">
+	<summary>
+ Trả về Số Double
+ </summary>
+	<param name="Text">Chuỗi truyền vào</param>
+</member><member name="M:Lemon3.Functions.L3ConvertType.Number(System.Object,System.String)">
+	<summary>
+ Trả về Số Double đã format
+ </summary>
+	<param name="Text">Chuỗi truyền vào</param>
+	<param name="StringFormat">Format số</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Functions.L3ConvertType.L3IsNumeric(System.String@)">
+	<summary>
+ Kiểm tra số hợp lệ không hợp lệ thì gán = 0 và Trả về False
+ </summary>
+	<param name="sValue">Giá trị truyền vào và trả ra</param>
+	<returns></returns>
+	<remarks>Nếu số không hợp lệ thì trả về =0</remarks>
+</member><member name="M:Lemon3.Functions.L3ConvertType.L3IsNumeric(System.String@,Lemon3.Functions.EnumDataType)">
+	<summary>
+ Kiểm tra số hợp lệ không hợp lệ thì gán = 0 và Trả về False
+ </summary>
+	<param name="sValue">Giá trị truyền vào và trả ra</param>
+	<param name="_EnumDataType">Kiểu dữ liệu dùng để kiểm tra</param>
+	<returns></returns>
+	<remarks>Nếu số không hợp lệ thì trả về =0</remarks>
+</member><member name="F:Lemon3.Functions.EnumDataType.DataString">
+	<summary>
+ Kiểu dữ liệu chuỗi nhưng chỉ nhập số VD: số điện thoại, Số CMND, ...
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Lemon3.Functions.EnumDataType.TinyInt">
+	<summary>
+ Kiểu dữ liệu TinyInt
+ </summary>
+</member><member name="F:Lemon3.Functions.EnumDataType.Int">
+	<summary>
+ Kiểu dữ liệu Int
+ </summary>
+</member><member name="F:Lemon3.Functions.EnumDataType.Money">
+	<summary>
+ Kiểu dữ liệu Money
+ </summary>
+</member><member name="F:Lemon3.Functions.EnumDataType.SmallMoney">
+	<summary>
+ Kiểu dữ liệu SmallMoney
+ </summary>
+</member><member name="F:Lemon3.Functions.EnumDataType.Number">
+	<summary>
+ Kiểu dữ liệu Decimal(28,8)
+ </summary>
+</member><member name="T:Lemon3.Functions.EnumDataType">
+	<summary>
+ Enum miêu tả các kiểu dữ liệu số được sử dụng dưới SQL
+ </summary>
+</member><member name="M:Lemon3.L3Permissions.ReturnPermission(System.String)">
+	<summary>
+ Trả về là quyền của màn hình truyền vào
+ </summary>
+	<param name="FormName">Màn hình cần lấy quyền</param>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertUnicodeToVietwareF(System.String)">
+	<summary>
+ Convert chuỗi từ Unicode sang VietwareF
+ </summary>
+	<param name="sText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertVietwareFToUnicode(System.String)">
+	<summary>
+ Convert chuỗi từ VietwareF (MS Sans Serif, DG Sans Serif) sang Unicode
+ </summary>
+	<param name="sText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertVniToUnicode(System.String)">
+	<summary>
+ Convert chuỗi từ VNI sang Unicode
+ </summary>
+	<param name="szInput"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertUnicodeToVni(System.String)">
+	<summary>
+ Chuyển đổi chuyển dạng Unicode sang VNI
+ </summary>
+	<param name="vnstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertVniToUnicode(System.Data.DataTable@)">
+	<summary>
+ Chuyển dữ liệu của Table sang Unicode
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertDataTable(System.Data.DataTable@,System.String[])">
+	<summary>
+ Chuyển Vni sang Unicode cho các cột của table
+ </summary>
+	<param name="dt"></param>
+	<param name="myStrArray"> Dim myStrArray() As String = {"RelationName", "RelativeName'} </param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertDataRow(System.Data.DataRow@,System.String[])">
+	<summary>
+ Chuyển Vni sang Unicode cho các cột của datarow
+ </summary>
+	<param name="dr"></param>
+	<param name="myStrArray"> Dim myStrArray() As String = {"RelationName", "RelativeName'} </param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertUnicodeToCharactor(System.String)">
+	<summary>
+ Chuyển đổi chuỗi ký tự có dấu sang không dấu
+ </summary>
+	<param name="sText"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.ConvertDataToUnsign(System.Data.DataTable@,System.String,System.String)">
+	<summary>
+ Chuyển dữ liệu từ có dấu sang dữ liệu không dấu (Mode Unicode)
+ </summary>
+	<param name="dtData"></param>
+	<param name="sColName">Tên cột cần chuyển</param>
+	<param name="sColNameUnsign">Tên cột chứa dữ liệu không dấu. Nếu không truyền thì mặc định sColName__Unsign</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.GetCodeTable">
+	<summary>
+ Lấy biến CodeTable theo sản phẩm Lemon3
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.SQLStringUnicode(System.Windows.Forms.TextBox,System.Boolean)">
+	<summary>
+ Chuyển Textbox lưu dạng Unicode hay Vni
+ </summary>
+	<param name="txtName"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.SQLStringUnicode(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển giá trị lưu dạng Unicode hay Vni
+ </summary>
+	<param name="text"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.SQLStringUnicode(System.Object,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển giá trị lưu dạng Unicode hay Vni
+ </summary>
+	<param name="text"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.SQLStringUnicode(System.String)">
+	<summary>
+ Chuyển chuỗi Text (Vni) sang chuỗi Unicode
+ </summary>
+	<param name="Text">Chuỗi Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.SQLStringVni(System.String)">
+	<summary>
+ Chuyển chuỗi Text (Unicode) sang chuỗi Vni
+ </summary>
+	<param name="Text">Chuỗi Unicode</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.UnicodeAllString(System.String@,System.String@,System.Boolean)">
+	<summary>
+ Trả về chuỗi Tất cả cho Unicode hay Vni
+ </summary>
+	<param name="sUnicode">Giá trị chữ Unicode</param>
+	<param name="sAll">Giá trị chữ Tất cả</param>
+	<param name="bUseUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.UnicodeJoin(System.Boolean)">
+	<summary>
+ Nối chữ U vào FieldName để load dữ liệu cho form dùng Unicode
+ </summary>
+	<param name="bUnicode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.UnicodeCaption(System.Boolean)">
+	<summary>
+ Nối chữ Unicode vào tiêu đề cho form Nhập liệu bằng Unicode
+ </summary>
+	<param name="bUnicode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.UniCode.L3UniCode.FontUnicode(System.Boolean,System.Drawing.FontStyle,System.Single)">
+	<summary>
+ Font của control
+ </summary>
+	<param name="bUseUnicode">Tùy chọn Unicode</param>
+	<param name="fontStyle">Kiểu font: Bold, Underline, ... (default Normal)</param>
+	<returns>Trả về font</returns>
+	<remarks>fontStyle: Underline phải truyền vào nếu label hoặc caption của lưới có Tìm kiếm F2</remarks>
+</member><member name="M:Lemon3.IO.CallExe.CallDxxMxx40(System.String,System.String,System.String[],System.Object[])">
+	<summary>
+ Gọi form trung gian DxxMxx40 mặc định Output01 = bSaved
+ </summary>
+	<param name="exeName"></param>
+	<param name="FormActive">Form gọi</param>
+	<param name="sField">Tham số truyền vào</param>
+	<param name="sValue">Giá trị truyền vào</param>
+	<returns>Trả ra Output01: Lưu hay không?</returns>
+	<remarks>Ds tham số truyền vào lưu sẵn ModuleID = exeName 2 ký tự (nếu chưa có tham số ModuleID)</remarks>
+</member><member name="M:Lemon3.IO.CallExe.CallDxxMxx40(System.String,System.String,System.String[],System.Object[],System.String[])">
+	<summary>
+ Gọi form trung gian DxxMxx40 có OutputName
+ </summary>
+	<param name="exeName"></param>
+	<param name="FormActive">Form gọi</param>
+	<param name="sField">Tham số truyền vào</param>
+	<param name="sValue">Giá trị truyền vào</param>
+	<param name="OutputName">Tham số trả về. VD output14 hoặc ID01</param>
+	<returns>Ds các tham số trả về</returns>
+	<remarks>Ds tham số truyền vào lưu sẵn ModuleID = exeName 2 ký tự (nếu chưa có tham số ModuleID)</remarks>
+</member><member name="M:Lemon3.IO.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:Lemon3.IO.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:Lemon3.IO.DxxExx40.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:Lemon3.IO.DxxExx40.FormPermission">
+	<summary>
+ Form Phân quyền cho màn hình được gọi 
+ </summary>
+</member><member name="M:Lemon3.IO.DxxExx40.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:Lemon3.IO.DxxExx40.SaveRunningExeSettings(System.String,System.String)">
+	<summary>
+ Lưu xuống Registry Exe hiện tại
+ </summary>
+	<param name="sCurrentExe">Exe hiện tại (ModuleD38)</param>
+	<param name="sChildExe">Exe con được gọi (EXECHILD)</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.IO.DxxExx40.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="M:Lemon3.Data.L3AttachmentAndNotes.ReturnNotesNumber(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Trả về số file Ghi chú
+ </summary>
+	<param name="TableName">Bảng của nghiệp vụ cần Ghi chú</param>
+	<param name="Key1ID">Giá trị của Khóa chính trong bảng (IGE)</param>
+	<param name="Key2ID">Giá trị của Khóa thứ 2</param>
+	<param name="Key3ID">Khóa thứ 3</param>
+	<param name="Key4ID">Khóa thứ 4</param>
+	<param name="Key5ID">Khóa thứ 5</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3AttachmentAndNotes.ReturnAttachmentNumber(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Trả về số file Đính kèm
+ </summary>
+	<param name="TableName">Bảng của nghiệp vụ cần Đính kèm</param>
+	<param name="Key1ID">Giá trị của Khóa chính trong bảng (IGE)</param>
+	<param name="Key2ID">Giá trị của Khóa thứ 2</param>
+	<param name="Key3ID">Khóa thứ 3</param>
+	<param name="Key4ID">Khóa thứ 4</param>
+	<param name="Key5ID">Khóa thứ 5</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F6020_ReturnField(System.String,System.String,System.Int32)">
+	<summary>
+ Chọn giá trị tiêu thức
+ </summary>
+	<param name="sSQLSelection"></param>
+	<param name="sFormIDPermission"></param>
+	<param name="iModeSelect"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F6020_DescriptionContent(System.String,System.String)">
+	<summary>
+ Chọn nội dung diễn giải
+ </summary>
+	<param name="sModule"></param>
+	<param name="sFormIDPermission"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F0120_AddNew(System.String,System.String)">
+	<summary>
+ Thêm mới Object
+ </summary>
+	<param name="sObjectTypeID"></param>
+	<param name="sFormIDPermission"></param>
+	<returns>Mã Object mới</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F0120_AddNew(System.String,System.String,System.String@,System.Boolean@)">
+	<summary>
+ Thêm mới Object, Trả ra mã nhân viên mới và bSaved
+ </summary>
+	<param name="sObjectTypeID"></param>
+	<param name="sFormIDPermission"></param>
+	<param name="sObjectID"></param>
+	<param name="bSaved"></param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F1655_FromHistory(System.Windows.Forms.Form,System.String,System.String,System.String,System.String)">
+	<summary>
+ Gọi Form D91F1655 từ nút Lịch sử 
+ </summary>
+	<param name="fForm">Form đang gọi</param>
+	<param name="sAuditCode">Mã AuditCode</param>
+	<param name="sAuditItemID">Mã AditItemID</param>
+	<param name="sMode">Mode</param>
+	<param name="sFormIDPermission">Form phân quyền</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.D91.L3D91.CallFormD91F1655(System.Windows.Forms.Form,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Gọi Form D91F1655
+ </summary>
+	<param name="fForm">Form đang gọi</param>
+	<param name="sAuditCode">Mã AuditCode</param>
+	<param name="sAuditItemID">Mã AditItemID</param>
+	<param name="sMode">Mode</param>
+	<param name="sFormIDPermission">Form phân quyền</param>
+	<param name="sCreateUserID">UserID: VD: tdbg2.Columns(COL2_CreateUserID).Text</param>
+	<param name="sCreateDate">Ngày tạo: VD: tdbg2.Columns(COL2_CreateDate).Text</param>
+	<param name="sEventID">Event ID: VD: tdbg.Columns(COL_EventID).Text </param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.IO.L3CallDLL.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:Lemon3.IO.L3CallDLL.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:Lemon3.IO.L3CallDLL.DxxExx40.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:Lemon3.IO.L3CallDLL.DxxExx40.FormPermission">
+	<summary>
+ Form Phân quyền cho màn hình được gọi 
+ </summary>
+</member><member name="M:Lemon3.IO.L3CallDLL.DxxExx40.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:Lemon3.IO.L3CallDLL.DxxExx40.SaveRunningExeSettings(System.String,System.String)">
+	<summary>
+ Lưu xuống Registry Exe hiện tại
+ </summary>
+	<param name="sCurrentExe">Exe hiện tại (ModuleD38)</param>
+	<param name="sChildExe">Exe con được gọi (EXECHILD)</param>
+	<remarks></remarks>
+</member><member name="M:Lemon3.IO.L3CallDLL.DxxExx40.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="F:Lemon3.StructureOption.MessageAskBeforeSave">
+	<summary>
+ Hỏi trước khi lưu
+ </summary>
+</member><member name="F:Lemon3.StructureOption.MessageWhenSaveOK">
+	<summary>
+ Thông báo khi lưu thành công
+ </summary>
+</member><member name="F:Lemon3.StructureOption.DefaultDivisionID">
+	<summary>
+ Lưu đơn vị tính mặc định
+ </summary>
+</member><member name="F:Lemon3.StructureOption.ViewMyVoucher">
+	<summary>
+ Hiển thị số phiếu của riêng tôi
+ </summary>
+</member><member name="F:Lemon3.Resources.L3Resource.rV">
+	<summary>
+ Lưu trữ Resource tiếng Việt
+ </summary>
+</member><member name="F:Lemon3.Resources.L3Resource.rE">
+	<summary>
+ Lưu trữ Resource tiếng Anh
+ </summary>
+</member><member name="M:Lemon3.Resources.L3Resource.rL3(System.String)">
+	<summary>
+ Trả về chuỗi resource ứng với ResourceID truyền vào
+ </summary>
+	<param name="ResourceID">Mã Resource</param>
+	<remarks>Nếu không tìm thấy ResourceID ở file Tiếng Anh thì sẽ
+ trả về Resouce ở file Tiếng Việt, và nếu không tìm thấy Resource ở 
+ file Tiếng Việt sẽ trả về Mã ResourceID này
+ </remarks>
+</member><member name="M:Lemon3.Resources.L3Resource.GeneralItems">
+	<summary>
+ Từ ngữ chung
+ </summary>
+	<remarks>Gọi hàm chỗ LoadOthers</remarks>
+</member><member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.approve">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.CancelVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.CloseForm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.copy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.EditOther">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.EditVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ExportDataScript">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ExportToExcel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ExportToExcelOut">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ImportData">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.IssueStock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.KEY">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ListAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.LockVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.navigate_beginning">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.navigate_end">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.navigate_left2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.navigate_right2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.NoSave">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.PrintReport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.reloader">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.Save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.ShowDetail">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.SysInfo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Lemon3.Functions.L3DataTable.ReturnTableFilter(System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ Trả về một table sau khi đã được lọc
+ </summary>
+	<param name="dt">Bảng dữ liệu trước khi lọc</param>
+	<param name="sWhereClause">Điều kiện lọc (ví dụ:  ObjectTypeID = 'KH')</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Functions.L3DataTable.ReturnDataRow(System.Object,System.String)">
+	<summary>
+ Lấy dòng dữ liệu trong Table
+ </summary>
+	<param name="dtSource">Nguồn dữ liệu cần lọc. Truyền vào Datable or Combo.DataSource or Dropdown.DataSource</param>
+	<param name="sWhere">Điều kiện lọc</param>
+	<returns>dòng dữ liệu đầu tiên tìm được</returns>
+	<remarks>Trả về nothing nếu không tồn tại</remarks>
+</member><member name="M:Lemon3.Functions.L3DataTable.ReturnRowTable(System.Data.DataTable,System.String,System.String)">
+	<summary>
+ Trả về vị trí row của bảng sau khi tìm kiếm
+ </summary>
+	<param name="dt">Bảng dữ liệu</param>
+	<param name="sKeysField">Khóa của bảng</param>
+	<param name="sValue">Giá trị cần tìm</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Functions.L3DataTable.ReturnRowTable(System.Data.DataTable,System.String,System.String,System.String)">
+	<summary>
+ Trả về vị trí row của bảng sau khi tìm kiếm
+ </summary>
+	<param name="dt">Bảng dữ liệu</param>
+	<param name="sKeysField">Khóa của bảng</param>
+	<param name="sValue">Giá trị cần tìm</param>
+	<param name="sOrder">Thứ tự sắp xếp: ASC hay DESC </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.CheckIdTextBox(System.Windows.Forms.TextBox@,System.Int32,System.Boolean)">
+	<summary>
+ Kiểm tra TextBox Nhập Mã/Công thức
+ </summary>
+	<param name="txtID">Control cần kiểm tra</param>
+	<param name="iLength">Chiều dài nhập liệu</param>
+	<param name="bFormula">Theo kiểu công thức (Default: False - cho Mã)</param>
+	<remarks>Cho một textbox, đối số bFormula : Kiểu kiểm tra là Mã hay Công thức</remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.ChangePositionIndexVNI(System.String,System.Int32@,System.Int32@)">
+	<summary>
+ Thay đổi vị trí Select của chuỗi Vni
+ </summary>
+	<param name="str"></param>
+	<param name="posFrom">vị trí bắt đầu</param>
+	<param name="posTo">Số ký tự được Select</param>
+	<remarks>Không cần kiểm tra khi Unicode</remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.CheckIdCharactor(System.String,System.String)">
+	<summary>
+ Kiểm tra Mã hợp lệ 
+ </summary>
+	<param name="str">Chuỗi kiểm tra</param>
+	<returns>Vị trí ký tự vi phạm</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.IndexIdCharactor(System.String,System.String)">
+	<summary>
+ Kiểm tra Mã hợp lệ 
+ </summary>
+	<param name="str">Chuỗi kiểm tra</param>
+	<returns>Vị trí ký tự vi phạm</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.CheckIdTextBoxG4(System.Windows.Forms.TextBox@,System.Int32,System.Boolean,System.String)">
+	<summary>
+ Kiểm tra TextBox Nhập Mã/Công thức
+ </summary>
+	<param name="txtID">Control cần kiểm tra</param>
+	<param name="iLength">Chiều dài nhập liệu</param>
+	<param name="bFormula">Theo kiểu công thức (Default: False - cho Mã)</param>
+	<remarks>Cho một textbox, đối số bFormula : Kiểu kiểm tra là Mã hay Công thức</remarks>
+</member><member name="M:Lemon3.Controls.L3ValidData.CheckIdTextBox(System.Windows.Forms.TextBox[]@,System.Int32,System.Boolean)">
+	<summary>
+ Kiểm tra nhiều TextBox Nhập Mã/Công thức
+ </summary>
+	<param name="txtID">Control cần kiểm tra</param>
+	<param name="iLength">Chiều dài nhập liệu</param>
+	<param name="bFormula">Theo kiểu công thức (Default: False - cho Mã)</param>
+	<remarks>Cho một textbox, đối số bFormula : Kiểu kiểm tra là Mã hay Công thức</remarks>
+</member><member name="T:Lemon3.Controls.L3ValidData">
+	<summary>
+ Lớp xây dựng kiểm tra dữ liệu hợp lệ, lớp này phải New L3ValidData
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ExistRecord(System.String,System.String)">
+	<summary>
+ Kiểm tra xem có tồn tại ít nhất một hàng trong lệnh SQL không
+ </summary>
+	<param name="SQL">Lệnh SQL cần kiểm tra</param>
+</member><member name="M:Lemon3.Data.L3SQLServer.ReturnDataSet(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ Trả về một DataSet từ chuỗi SQL truyền vào
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<returns>Trả về một DataSet nếu thực thi chuỗi SQL thành công, ngược lại sẽ báo lỗi bằng MsgErr</returns>
+</member><member name="M:Lemon3.Data.L3SQLServer.ReturnDataSet(System.String,System.String[],System.String)">
+	<summary>
+ Trả về một DataSet từ chuỗi SQL truyền vào
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<param name="TableName">Mảng chứa tên các Table của DataSet</param>
+	<returns>Trả về một DataSet nếu thực thi chuỗi SQL thành công, ngược lại sẽ báo lỗi bằng MsgErr</returns>
+</member><member name="M:Lemon3.Data.L3SQLServer.ReturnDataTable(System.String,System.String)">
+	<summary>
+ Trả về một DataTable từ chuỗi SQL
+ </summary>
+	<param name="SQL">Chuỗi SQL thực thực</param>
+	<returns>DataTable nếu thực thi thành công lệnh SQL, ngược lại trả về nothing</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ReturnScalar(System.String,System.String)">
+	<summary>
+ Thực thi câu lệnh SQL, trả về kết quả là hàng đâu tiên và cột đầu tiên theo dạng chuỗi
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<returns>Trả về một chuỗi nếu thực thi lệnh SQL thành công, ngược lại sẽ hiển thị MsgErr</returns>
+	<remarks>Thường dùng để kiểm tra</remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ExecuteSQL(System.Text.StringBuilder[],System.String,System.Boolean,System.String)">
+	<summary>
+ Lưu dữ liệu nhiều
+ </summary>
+	<param name="strSQL">Danh sách SQL cần thực thi</param>
+	<returns>Thành công = True, Ngược lại = False</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ReturnSQL(System.Text.StringBuilder[],System.Text.StringBuilder@,System.Int32@,System.Int32)">
+	<summary>
+ Thêm SQL vào danh sách sRet() nếu =30 dòng
+ </summary>
+	<param name="sRet">danh sách SQL</param>
+	<param name="sSQL">SQL cần thêm vào</param>
+	<param name="iCount">Số dòng đang nối</param>
+	<returns>danh sách sRet(), refresh lại biến sSQL="" và biến đếm iCount =0</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.AddValueInArrStringBuilder(System.Text.StringBuilder[],System.Object,System.Boolean,System.Boolean)">
+	<summary>
+ Thêm sSQL vào danh sách arSource()
+ </summary>
+	<param name="arSource">danh sách arSource()</param>
+	<param name="sSQL"></param>
+	<returns>danh sách arSource()</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.AddValueInArrStringBuilder(System.Text.StringBuilder[],System.Text.StringBuilder[])">
+	<summary>
+ Nối thêm mảng arDes() vào mảng arSource()
+ </summary>
+	<param name="arSource">mảng arSource()</param>
+	<param name="arDes">mảng arDes()</param>
+	<returns>mảng arDes()</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ExecuteSQLNoTransaction(System.String,System.String)">
+	<summary>
+ Thực thi một chuỗi SQL không dùng Transaction (2 Đối số:  chuỗi SQL và chuỗi kết nối mới (nếu có))
+ </summary>
+	<param name="strSQL">Chuỗi SQL để thực thi</param>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.ExecuteSQLNoTransaction(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ Thực thi một chuỗi SQL không dùng Transaction (HÀM CHÍNH)
+ </summary>
+	<param name="strSQL">Chuỗi SQL để thực thi</param>
+	<param name="MyMsgErr">Chuỗi thông báo khi có lỗi</param>
+	<param name="bUseClipboard">Có sử dụng Clipboard không</param>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.IsExistKey(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra có tồn tại key của bảng hay không ?
+ </summary>
+	<param name="TableName">Bảng cần kiểm tra</param>
+	<param name="Field">Khóa cần kiểm tra</param>
+	<param name="Text">Giá trị cần kiểm tra</param>
+	<returns>Trả về True nếu có khóa, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.IsExistKey(System.String,System.String[],System.String[],System.String,System.String)">
+	<summary>
+ Kiểm tra có tồn tại key của bảng hay không ?
+ </summary>
+	<param name="TableName">Bảng cần kiểm tra</param>
+	<param name="Field">Mảng Khóa cần kiểm tra</param>
+	<param name="Text">Mảng Giá trị cần kiểm tra</param>
+	<returns>Trả về True nếu có khóa, ngược lại trả về False</returns>
+	<remarks>Dim FieldList () as string ={"Field1", "Field2"}; Dim TextList () as string ={"Text1", "Text2"} Gọi IsExistKey ("DxxTxxxx", FieldList,)</remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.CheckStorebyTrans(System.String)">
+	<summary>
+ Check store có hỗ trợ Roolback nếu lỗi, mặc định Status = 1 thì Roolback
+ </summary>
+	<param name="SQL">SQL thực thi</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.CheckStorebyTrans(System.String,Lemon3.Data.EnumCheckStore)">
+	<summary>
+ Check store có hỗ trợ Roolback nếu lỗi
+ </summary>
+	<param name="SQL">SQL thực thi</param>
+	<param name="eStatusRollBack">Giá trị Status cần Roolback </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.CheckStorebyTrans(System.String,Lemon3.Data.EnumCheckStore,System.Data.DataTable@)">
+	<summary>
+ Check store có hỗ trợ Roolback nếu lỗi, mặc định Status = 1 thì Roolback
+ </summary>
+	<param name="SQL">SQL thực thi</param>
+	<param name="eStatusRollBack">Giá trị Status cần Roolback </param>
+	<param name="dt">Lấy DataTable để từng form sử dụng</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Lemon3.Data.L3SQLServer.CheckStorebyTrans(System.String,Lemon3.Data.EnumCheckStore,System.Data.DataTable@,System.Boolean)">
+	<summary>
+ Check store có hỗ trợ Roolback nếu lỗi, mặc định Status = 1 thì Roolback
+ </summary>
+	<param name="SQL">SQL thực thi</param>
+	<param name="eStatusRollBack">Giá trị Status cần Roolback </param>
+	<param name="dt">Lấy DataTable để từng form sử dụng</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Lemon3.EnumFormState.FormAdd">
+	<summary>
+ Form ở trạng thái: Thêm mới
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormEdit">
+	<summary>
+ Form ở trạng thái: Sửa
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormEditOther">
+	<summary>
+ Form ở trạng thái: Sửa khác
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormView">
+	<summary>
+ Form ở trạng thái: Xem
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormAddInvoice">
+	<summary>
+ Form ở trạng thái: Thêm hóa đơn
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormAddVoucher">
+	<summary>
+ Form ở trạng thái: Thêm phiếu
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormEditInvoice">
+	<summary>
+ Form ở trạng thái: Sửa hóa đơn
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormEditVoucher">
+	<summary>
+ Form ở trạng thái: Sửa phiếu
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormCopy">
+	<summary>
+ Form ở trạng thái: Copy
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormApprove">
+	<summary>
+ Form ở trạng thái: Duyệt
+ </summary>
+</member><member name="F:Lemon3.EnumFormState.FormOther">
+	<summary>
+ Form ở trạng thái: Khác
+ </summary>
+</member><member name="T:Lemon3.EnumFormState">
+	<summary>
+ Enum miêu tả trạng thái của form
+ </summary>
+</member>
+</members>
+</doc>
