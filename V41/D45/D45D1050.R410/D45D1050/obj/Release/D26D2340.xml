@@ -1,0 +1,171 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D26D2340
+</name>
+</assembly>
+<members>
+<member name="M:D26D2340.D26F2200.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member><member name="M:D26D2340.D26F2090.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member><member name="P:D26D2340.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.approve">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ARW08DN">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ARW08UP">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.CancelVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.CloseForm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.copy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.EditOther">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.EditVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ExportToExcel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ImportData">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.IssueStock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.KEY">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ListAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.LockVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.PrintReport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.ShowDetail">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.SysInfo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D26D2340.My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:D26D2340.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:D26D2340.D26F2080.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member><member name="M:D26D2340.D26F2070.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member><member name="M:D26D2340.D26F2180.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member><member name="T:D26D2340.D26X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member><member name="M:D26D2340.D26F2100.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<param name="bUseUnicode"></param>
+	<param name="bGroupBy">lưới có dùng GroupBy không?</param>
+	<remarks>bGroupBy không có tác dụng</remarks>
+</member>
+</members>
+</doc>
