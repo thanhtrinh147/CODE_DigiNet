@@ -1,0 +1,375 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D13E0040
+</name>
+</assembly>
+<members>
+<member name="F:D13E0040.D13X0010.StatusAuditCode.None">
+	<summary>
+ Chưa kiểm tra
+ </summary>
+</member><member name="F:D13E0040.D13X0010.StatusAuditCode.Use">
+	<summary>
+ Kiểm tra có dùng
+ </summary>
+</member><member name="F:D13E0040.D13X0010.StatusAuditCode.NoUse">
+	<summary>
+ Kiểm tra không dùng
+ </summary>
+</member><member name="T:D13E0040.D13X0010.StatusAuditCode">
+	<summary>
+ Kiểm tra có dùng mã AuditCode không
+ </summary>
+</member><member name="T:D13E0040.D13X0010">
+	<summary>
+ Module này dùng để chưá các hàm AuditLog
+ </summary>
+</member><member name="M:D13E0040.D13X0000.Main">
+	<summary>
+ Sub khởi động cho Module D13
+ </summary>
+</member><member name="T:D13E0040.D13X0000">
+	<summary>
+ Module này liên quan đến các vấn đề của SUB Main
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.MODULED13">
+	<summary>
+ Module đang coding D13E0040
+ </summary>
+</member><member name="F:D13E0040.D13X0001.D13">
+	<summary>
+ Chuỗi D13
+ </summary>
+</member><member name="F:D13E0040.D13X0001.ModuleID">
+	<summary>
+ Chuỗi ModuleID
+ </summary>
+</member><member name="F:D13E0040.D13X0001.L3_APP_NAME">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D13E0040.D13X0001.L3_HS_SECTION">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D13E0040.D13X0001.L3_HS_MODULE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D13E0040.D13X0001.L3_HS_VALUE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D13E0040.D13X0001.gbSaveOK">
+	<summary>
+ Dùng cho kiểm tra thông tin đã lưu thành công hay chưa
+ </summary>
+</member><member name="F:D13E0040.D13X0001.gbFlag">
+	<summary>
+ ????
+ </summary>
+</member><member name="F:D13E0040.D13X0001.PathReport9">
+	<summary>
+ Dùng cho form Chọn đường dẫn báo cáo: Standard Report
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.PathCustomizedReport9">
+	<summary>
+ Dùng cho form Chọn đường dẫn báo cáo: Custom Report
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.gsReportPath">
+	<summary>
+  Dùng cho form Chọn đường dẫn báo cáo
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.gsReportID">
+	<summary>
+  Dùng cho form Chọn đường dẫn báo cáo-giá trị ReportID bên nghiệp vụ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.gbIsCustom">
+	<summary>
+  Dùng cho In theo đặc thù
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.giMenuType">
+	<summary>
+ Option của Treeview thiết lập tại màn hình chính F0000
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0001.frmD13F0000">
+	<summary>
+ Form Main của Module D13
+ </summary>
+</member><member name="T:D13E0040.D13X0001">
+	<summary>
+ Module này liên qua đến các khai báo biến, enum, ... toàn cục
+ </summary>
+</member><member name="M:D13E0040.D13X0002.MakeMenuPeriod">
+	<summary>
+ Tạo caption cho menu Period và kiểm tra tình trạng khóa, mở sổ cho biến gbClosed
+ </summary>
+</member><member name="M:D13E0040.D13X0002.TongCong(System.Int32)">
+	<summary>
+ Ghi chữ Tổng cộng dưới ColumnFooters 
+ </summary>
+</member><member name="M:D13E0040.D13X0002.CopyColumnsF9(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.String)">
+	<summary>
+ Copy tất cả các cột từ vị trí con trỏ đang đứng khi nhấn phím F9
+ </summary>
+</member><member name="M:D13E0040.D13X0002.MsgLockedColumn">
+	<summary>
+ Thông báo cột đã bị khóa khi nhấn phím nóng trên cột này để copy, xóa
+ </summary>
+</member><member name="M:D13E0040.D13X0002.MsgNotDeleteData">
+	<summary>
+ Thông báo dữ liệu đang được sử dụng , không cho xóa
+ </summary>
+</member><member name="M:D13E0040.D13X0002.MsgNotReOpenSalaryFile">
+	<summary>
+ Thông báo dữ liệu đang được sử dụng , không cho mở lại hồ sơ lương
+ </summary>
+</member><member name="M:D13E0040.D13X0002.MsgNotOpenSalaryFile">
+	<summary>
+ Thông báo dữ liệu đang được sử dụng , không cho mở hồ sơ lương
+ </summary>
+</member><member name="M:D13E0040.D13X0002.IsExistPKey(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra tồn tại khóa
+ </summary>
+</member><member name="M:D13E0040.D13X0002.IsExistPKey1(System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra tồn tại khóa
+ </summary>
+</member><member name="M:D13E0040.D13X0002.GetDataSelectRows(System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Lấy chuỗi dữ liệu của những dòng được chọn
+ </summary>
+	<param name="iCol">Cột lấy dữ liệu</param>
+	<param name="Grid">lưới C1</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D13E0040.D13X0002.MarkInvisibleColumn(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Đánh dấu Cột nào k hiển thị  = thuộc tính AllowSizing
+ </summary>
+	<param name="tdbg"></param>
+	<remarks></remarks>
+</member><member name="T:D13E0040.D13X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_Server">
+	<summary>
+ Server truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_Database">
+	<summary>
+ Database truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_ConnectionUser">
+	<summary>
+ User login vào Lemon3 truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_UserID">
+	<summary>
+ User login vào Database truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_Password">
+	<summary>
+ Password user login vào Database truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_DivisionID">
+	<summary>
+ Đơn vị truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_TranMonth">
+	<summary>
+ Tháng kế toán truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_TranYear">
+	<summary>
+ Năm kế toán truyền vào
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_Language">
+	<summary>
+ Ngôn ngữ truyền vào
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D13E0040.D13X0003.PARA_FormID">
+	<summary>
+ Form ID dùng để hiện thị. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="F:D13E0040.D13X0003.PARA_FormIDPermission">
+	<summary>
+ Form ID dùng để phân quyền. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="T:D13E0040.D13X0003">
+	<summary>
+ Module này dùng để khai báo các vấn đề liên quan đến việc gọi một exe con
+ </summary>
+</member><member name="M:D13E0040.D09U2222.LoadLanguage_D09U2222">
+	<summary>
+ Ham nay duoc goi khi chon ngon ngu tai man hinh D09F0000
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D13E0040.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D13E0040.DxxExx40.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con DxxExx40
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D13E0040.DxxExx40.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D13E0040.DxxExx40.FormPermission">
+	<summary>
+ Form Phân quyền cho màn hình được gọi 
+ </summary>
+</member><member name="M:D13E0040.DxxExx40.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D13E0040.DxxExx40.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="T:D13E0040.DxxExx40">
+	<summary>
+ Class DxxExx40 dùng để gọi các exe DxxExx40
+ </summary>
+	<remarks></remarks>
+</member><member name="P:D13E0040.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.approve">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.CancelVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.Close">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.CloseForm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.copy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.EditOther">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.EditVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ExportDataScript">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ExportToExcel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ExportToExcelOut">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ImportData">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.IssueStock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ListAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.LockVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.PrintReport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.PrintReport1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.ShowDetail">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.SysInfo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13E0040.My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:D13E0040.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

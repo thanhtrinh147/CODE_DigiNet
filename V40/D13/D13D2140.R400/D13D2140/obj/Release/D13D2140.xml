@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D13D2140
+</name>
+</assembly>
+<members>
+<member name="F:D13D2140.D13X0010.StatusAuditCode.None">
+	<summary>
+ Chưa kiểm tra
+ </summary>
+</member><member name="F:D13D2140.D13X0010.StatusAuditCode.Use">
+	<summary>
+ Kiểm tra có dùng
+ </summary>
+</member><member name="F:D13D2140.D13X0010.StatusAuditCode.NoUse">
+	<summary>
+ Kiểm tra không dùng
+ </summary>
+</member><member name="T:D13D2140.D13X0010.StatusAuditCode">
+	<summary>
+ Kiểm tra có dùng mã AuditCode không
+ </summary>
+</member><member name="T:D13D2140.D13X0010">
+	<summary>
+ Module này dùng để chưá các hàm AuditLog
+ </summary>
+</member><member name="M:D13D2140.D13X0002.MsgNotReOpenSalaryFile">
+	<summary>
+ Thông báo dữ liệu đang được sử dụng , không cho mở lại hồ sơ lương
+ </summary>
+</member><member name="M:D13D2140.D13X0002.MsgLockedColumn">
+	<summary>
+ Thông báo cột đã bị khóa khi nhấn phím nóng trên cột này để copy, xóa
+ </summary>
+</member><member name="T:D13D2140.D13X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member><member name="M:D13D2140.D13F2022.CopyColumns(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.String,System.Int32)">
+	<summary>
+ Copy giá trị trong 1 cột có liên quan đến các cột kế nó (khi nhấn Head_Click)
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="RowCopy">Dòng cần copy</param>
+	<param name="ColumnCount">Số cột liên quan khi cần copy</param>
+	<remarks>Chỉ copy những cột ở vị trí liên tục nhau</remarks>
+</member><member name="P:D13D2140.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.approve">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.CancelVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.CloseForm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.copy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.EditOther">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.EditVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.ExportToExcel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.ImportData">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.IssueStock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.ListAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.LockVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.PrintReport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.ShowDetail">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.SysInfo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2140.My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:D13D2140.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:D13D2140.D13F2026.CopyColumns(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.String,System.Int32)">
+	<summary>
+ Copy giá trị trong 1 cột (khi nhấn Head_Click)
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="sValue">Giá trị cần copy</param>
+	<param name="RowCopy">Dòng đang copy</param>
+	<remarks>Chỉ dùng copy những cột dữ liệu không liên quan đến các cột khác, copy cả giá trị ''</remarks>
+</member><member name="M:D13D2140.D13F2026.CopyColumns(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.String)">
+	<summary>
+ Copy giá trị trong 1 cột có liên quan đến các cột kế nó (khi nhấn Head_Click)
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="RowCopy">Dòng cần copy</param>
+	<param name="ColumnCount">Số cột liên quan khi cần copy</param>
+	<remarks>Chỉ copy những cột ở vị trí liên tục nhau</remarks>
+</member>
+</members>
+</doc>

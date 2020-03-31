@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>D13D4040</RootNamespace>
+    <AssemblyName>D13D4040</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>5.Bitmaps\Lemon3.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>D13D4040.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>D13D4040.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.2, Version=2.1.20062.47, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20062.17012, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20062.30142, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20062.104, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20062.60510, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="D00D0041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\LEMON3\D00D0041.dll</HintPath>
+    </Reference>
+    <Reference Include="D13D9940, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0141, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0241, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0341, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D1041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\LEMON3\D99D1041.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="D00D0041" />
+    <Import Include="D13D9940" />
+    <Import Include="D99D0041" />
+    <Import Include="D99D0141" />
+    <Import Include="D99D0241" />
+    <Import Include="D99D0341" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Forms\D13F3030.Designer.vb">
+      <DependentUpon>D13F3030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\D13F3030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\D13F3050.designer.vb">
+      <DependentUpon>D13F3050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\D13F3050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\D13F4200.Designer.vb">
+      <DependentUpon>D13F4200.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\D13F4200.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Modules\D13X0002.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1.Forms\D13F3030.resx">
+      <DependentUpon>D13F3030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\D13F3050.resx">
+      <DependentUpon>D13F3050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\D13F4200.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>D13F4200.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.Modules\ReadMe.txt" />
+    <None Include="5.Bitmaps\add.ico" />
+    <None Include="5.Bitmaps\copy.ico" />
+    <None Include="5.Bitmaps\delete.ico" />
+    <None Include="5.Bitmaps\edit.ico" />
+    <None Include="5.Bitmaps\ExportToExcel.gif" />
+    <None Include="5.Bitmaps\find.ico" />
+    <None Include="5.Bitmaps\ICONS\add.ico" />
+    <None Include="5.Bitmaps\ICONS\approve.ico" />
+    <None Include="5.Bitmaps\ICONS\copy.ico" />
+    <None Include="5.Bitmaps\ICONS\delete.ico" />
+    <None Include="5.Bitmaps\ICONS\edit.ico" />
+    <None Include="5.Bitmaps\ICONS\EditOther.ico" />
+    <None Include="5.Bitmaps\ICONS\EditVoucher.ico" />
+    <None Include="5.Bitmaps\ICONS\ExportToExcel.gif" />
+    <None Include="5.Bitmaps\ICONS\find.ico" />
+    <None Include="5.Bitmaps\ICONS\IssueStock.ico" />
+    <None Include="5.Bitmaps\ICONS\ListAll.ico" />
+    <None Include="5.Bitmaps\ICONS\LockVoucher.ico" />
+    <None Include="5.Bitmaps\ICONS\print.png" />
+    <None Include="5.Bitmaps\ICONS\PrintReport.bmp" />
+    <None Include="5.Bitmaps\ICONS\ShowDetail.ico" />
+    <None Include="5.Bitmaps\ICONS\SysInfo.ico" />
+    <None Include="5.Bitmaps\ICONS\view.ico" />
+    <None Include="5.Bitmaps\ICONS\CloseForm.ico" />
+    <Content Include="5.Bitmaps\Lemon3.ico" />
+    <None Include="5.Bitmaps\view.ico" />
+    <None Include="5.Bitmaps\ListAll.ico" />
+    <None Include="5.Bitmaps\print.png" />
+    <None Include="5.Bitmaps\SysInfo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.Forms\Other\" />
+    <Folder Include="3.Classes\" />
+    <Folder Include="4.UserControls\" />
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D13D2040
+</name>
+</assembly>
+<members>
+<member name="P:D13D2040.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.approve">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.CancelVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.CloseForm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.copy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.EditOther">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.EditVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.ExportToExcel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.ImportData">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.IssueStock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.ListAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.LockVoucher">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.PrintReport">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.ShowDetail">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.SysInfo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:D13D2040.My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:D13D2040.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:D13D2040.D13X0007.TextOnPaste.CheckValidNumber(System.String)">
+	<summary>
+ Kiểm tra số không hợp lệ
+ </summary>
+	<param name="NewVal">Giá trị cần paste vào</param>
+	<returns>True: hợp lệ </returns>
+	<remarks></remarks>
+</member><member name="M:D13D2040.D13X0007.CheckKeyPress_Number(System.Object,System.Char,D99D0241.EnumKey,System.String)">
+	<summary>
+ Checked number when the user presses and releases a key on the keyboard
+ </summary>
+	<param name="sender">Required. The control to be pressed</param>
+	<param name="KeyChar">Required. Char presses</param>
+	<param name="TypeCheck">Required. Chars are allow press </param>
+	<param name="CheckString">Optional. Chars are allow press when TypeCheck is Custom</param>
+	<returns>returns a value indicating whether the specified keychar occurs whithin this TypeCheck</returns>
+	<remarks></remarks>
+</member><member name="M:D13D2040.D13X0007.CheckStringTextBox(System.Windows.Forms.TextBox,System.String)">
+	<summary>
+ Entering number in textbox with DataType is String
+ </summary>
+	<param name="txtNumber">textbox name</param>
+	<param name="CheckString">The string is checked when TypeCheck = Custom</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckStringTextBox(System.Windows.Forms.TextBox[],System.String)">
+	<summary>
+  Entering number in textboxs with DataType is String
+ </summary>
+	<param name="ar">textboxs name array have construct the same</param>
+	<param name="CheckString">The string is checked when TypeCheck = Custom</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckNumberTextBox(System.Windows.Forms.TextBox,System.String,D99D0241.EnumDataType,D99D0241.EnumKey)">
+	<summary>
+ Entering number in textboxs with DataType is Number
+ </summary>
+	<param name="txtNumber">textbox name</param>
+	<param name="_EnumDataType">DataType input (string or number) to check overflow</param>
+	<param name="TypeCheck">char is checked whitout TypeCheck = Custom</param>
+	<param name="sNumberFormat">string format when LostFocus textbox</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckNumberTextBox(System.Windows.Forms.TextBox,System.Int32,D99D0241.EnumDataType,D99D0241.EnumKey)">
+	<summary>
+ Entering number in textbox with DataType is Number
+ </summary>
+	<param name="txtNumber">textbox name</param>
+	<param name="_EnumDataType">DataType input (string or number) to check overflow</param>
+	<param name="TypeCheck">char is checked whithout TypeCheck = Custom</param>
+	<param name="num_digits">number digits to format value</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckNumberTextBox(System.Windows.Forms.TextBox[],System.String,D99D0241.EnumDataType,D99D0241.EnumKey)">
+	<summary>
+  Entering number in textboxs with DataType is Number
+ </summary>
+	<param name="ar">Textbox array</param>
+	<param name="_EnumDataType">the same dataType</param>
+	<param name="sNumberFormat">the same number format string</param>
+	<param name="TypeCheck">char is checked when the user keypress whithout TypeCheck = Custom</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckNumberTextBox(System.Windows.Forms.TextBox[],System.String[],D99D0241.EnumDataType,D99D0241.EnumKey)">
+	<summary>
+  Entering number in textboxs with DataType is Number
+ </summary>
+	<param name="ar">Textbox array</param>
+	<param name="_EnumDataType">the same dataType</param>
+	<param name="sNumberFormat">string format array when textbox is lostfocus</param>
+	<param name="TypeCheck">char is checked when the user keypress  whithout TypeCheck = Custom</param>
+	<remarks>Don't use TypeCheck = Custom</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckStringTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String,System.String)">
+	<summary>
+ DataType of column is String
+ </summary>
+	<param name="tdbg">truedbgrid name</param>
+	<param name="iCol">column name</param>
+	<param name="CheckString">The string is checked when TypeCheck = Custom</param>
+	<remarks>This function is set in Form_Load event</remarks>
+</member><member name="M:D13D2040.D13X0007.CheckNumberTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String,D99D0241.EnumDataType,D99D0241.EnumKey)">
+	<summary>
+ Check number input grid
+ </summary>
+	<param name="tdbg">truedbgrid name</param>
+	<param name="iCol">column name</param>
+	<param name="_EnumDataType">DataType input (string or number) to check overflow</param>
+	<param name="TypeCheck">char is checked whithout TypeCheck = Custom</param>
+	<remarks>This function is set in Form_Load event, after tdbg_NumberFormat() function</remarks>
+</member><member name="T:D13D2040.D13X0001.Button">
+	<summary>
+ Định nghĩa các button dùng cho trường hợp nhấn button sẽ cho hiển thị các cột trên lưới tương ứng với button đó 
+ </summary>
+</member><member name="T:D13D2040.D13X0001.SALBA">
+	<summary>
+ Định nghĩa các giá trị boolean của các mức lương dùng để cột mức lương tương ứng hiển thị 
+ khi mức lương đó hiện tại có sử dụng hay ẩn đi khi mức lương đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.SALCE">
+	<summary>
+ Định nghĩa các giá trị boolean của các hệ số lương dùng để cột hệ số lương tương ứng hiển thị 
+ khi hệ số lương đó hiện tại có sử dụng hay ẩn đi khi hệ số lương đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.PRMAS">
+	<summary>
+ Định nghĩa các giá trị boolean của các thu nhập dùng để cột thu nhập tương ứng hiển thị 
+ khi thu nhập đó hiện tại có sử dụng hay ẩn đi khi thu nhập đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.ANACODE">
+	<summary>
+ Định nghĩa các giá trị boolean của các mã phân tích dùng để cột mã phân tích tương ứng hiển thị 
+ khi mã phân tích đó hiện tại có sử dụng hay ẩn đi khi mã phân tích đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.ANASALARY">
+	<summary>
+ Định nghĩa các giá trị boolean của các mã phân tích dùng để cột mã phân tích tiền lương tương ứng hiển thị 
+ khi mã phân tích tiền lương đó hiện tại có sử dụng hay ẩn đi khi mã phân tích tiền lương đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.TNH">
+	<summary>
+ Định nghĩa các giá trị boolean của các pp tính lương tích dùng để cột mã phân tích tương ứng hiển thị 
+ khi pp tính lương đó hiện tại có sử dụng hay ẩn đi khi pp tính lương đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.OLSC">
+	<summary>
+ Định nghĩa các giá trị boolean của các hệ số lương dùng để cột hệ số lương tương ứng hiển thị 
+ khi hệ số lương đó hiện tại có sử dụng hay ẩn đi khi hệ số lương đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001.InfoOther">
+	<summary>
+ update 27/12/2012 id 52980
+ Định nghĩa các giá trị boolean của các mã phân tích dùng để cột Thông tin khác tương ứng hiển thị 
+ khi Thông tin khác đó hiện tại có sử dụng hay ẩn đi khi Thông tin khác đó hiện tại không sử dụng
+ </summary>
+</member><member name="T:D13D2040.D13X0001">
+	<summary>
+ Module này liên qua đến các khai báo biến, enum, ... toàn cục
+ </summary>
+	<remarks>Các khai báo ở đây không được trùng với các khai báo ở các Module D99Xxxxx</remarks>
+</member><member name="M:D13D2040.D13X0002.MsgNotReOpenSalaryFile">
+	<summary>
+ Thông báo dữ liệu đang được sử dụng , không cho mở lại hồ sơ lương
+ </summary>
+</member><member name="M:D13D2040.D13X0002.MsgLockedColumn">
+	<summary>
+ Thông báo cột đã bị khóa khi nhấn phím nóng trên cột này để copy, xóa
+ </summary>
+</member><member name="M:D13D2040.D13X0002.GetDataSelectRows(System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Lấy chuỗi dữ liệu của những dòng được chọn
+ </summary>
+	<param name="iCol">Cột lấy dữ liệu</param>
+	<param name="Grid">lưới C1</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:D13D2040.D13X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member>
+</members>
+</doc>
