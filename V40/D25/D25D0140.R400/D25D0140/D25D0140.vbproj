@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>D25D0140</RootNamespace>
+    <AssemblyName>D25D0140</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>5.Bitmaps\Lemon3.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>
+    </DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20062.17012, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20062.30142, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20062.104, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20062.60510, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="D00D0041, Version=3.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\LEMON3\D00D0041.dll</HintPath>
+    </Reference>
+    <Reference Include="D25D9940, Version=3.90.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\LEMON3\D25D9940.dll</HintPath>
+    </Reference>
+    <Reference Include="D99D0041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0241, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0341, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D1041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="D00D0041" />
+    <Import Include="D25D9940" />
+    <Import Include="D99D0041" />
+    <Import Include="D99D0241" />
+    <Import Include="D99D0341" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Windows.Forms.PropertyGridInternal" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Forms\6.List\D25F1010.Designer.vb">
+      <DependentUpon>D25F1010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1011.Designer.vb">
+      <DependentUpon>D25F1011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1020.Designer.vb">
+      <DependentUpon>D25F1020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1021.Designer.vb">
+      <DependentUpon>D25F1021.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1021.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1030.Designer.vb">
+      <DependentUpon>D25F1030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1031.Designer.vb">
+      <DependentUpon>D25F1031.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1031.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1050.Designer.vb">
+      <DependentUpon>D25F1050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1051.Designer.vb">
+      <DependentUpon>D25F1051.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1051.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\7.Other\D25F1051_NN.designer.vb">
+      <DependentUpon>D25F1051_NN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\7.Other\D25F1051_NN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1052.Designer.vb">
+      <DependentUpon>D25F1052.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1052.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1053.Designer.vb">
+      <DependentUpon>D25F1053.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1053.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1054.Designer.vb">
+      <DependentUpon>D25F1054.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1054.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1055.Designer.vb">
+      <DependentUpon>D25F1055.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1055.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1056.Designer.vb">
+      <DependentUpon>D25F1056.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1056.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1057.Designer.vb">
+      <DependentUpon>D25F1057.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1057.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1060.Designer.vb">
+      <DependentUpon>D25F1060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1061.Designer.vb">
+      <DependentUpon>D25F1061.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1061.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1070.Designer.vb">
+      <DependentUpon>D25F1070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1071.Designer.vb">
+      <DependentUpon>D25F1071.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1071.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1080.designer.vb">
+      <DependentUpon>D25F1080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1081.designer.vb">
+      <DependentUpon>D25F1081.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1081.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1090.Designer.vb">
+      <DependentUpon>D25F1090.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1090.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1091.Designer.vb">
+      <DependentUpon>D25F1091.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\D25F1091.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\6.List\SelectTransType.designer.vb">
+      <DependentUpon>SelectTransType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\6.List\SelectTransType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Modules\D25X0002.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\D09U2222.designer.vb">
+      <DependentUpon>D09U2222.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\D09U2222.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\D09U2223.designer.vb">
+      <DependentUpon>D09U2223.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\D09U2223.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlCombo.designer.vb">
+      <DependentUpon>usrctrlCombo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlCombo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlDate.designer.vb">
+      <DependentUpon>usrctrlDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlDate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlTextBox.designer.vb">
+      <DependentUpon>usrctrlTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\usrctrlTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\WideTextBox.Designer.vb">
+      <DependentUpon>WideTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\WideTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1010.resx">
+      <DependentUpon>D25F1010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1011.resx">
+      <DependentUpon>D25F1011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1020.resx">
+      <DependentUpon>D25F1020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1021.resx">
+      <DependentUpon>D25F1021.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1030.resx">
+      <DependentUpon>D25F1030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1031.resx">
+      <DependentUpon>D25F1031.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1050.resx">
+      <DependentUpon>D25F1050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1051.resx">
+      <DependentUpon>D25F1051.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\7.Other\D25F1051_NN.resx">
+      <DependentUpon>D25F1051_NN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1052.resx">
+      <DependentUpon>D25F1052.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1053.resx">
+      <DependentUpon>D25F1053.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1054.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>D25F1054.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1055.resx">
+      <DependentUpon>D25F1055.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1056.resx">
+      <DependentUpon>D25F1056.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1057.resx">
+      <DependentUpon>D25F1057.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1060.resx">
+      <DependentUpon>D25F1060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1061.resx">
+      <DependentUpon>D25F1061.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1070.resx">
+      <DependentUpon>D25F1070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1071.resx">
+      <DependentUpon>D25F1071.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1080.resx">
+      <DependentUpon>D25F1080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1081.resx">
+      <DependentUpon>D25F1081.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1090.resx">
+      <DependentUpon>D25F1090.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\D25F1091.resx">
+      <DependentUpon>D25F1091.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\6.List\SelectTransType.resx">
+      <DependentUpon>SelectTransType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\D09U2222.resx">
+      <DependentUpon>D09U2222.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\D09U2223.resx">
+      <DependentUpon>D09U2223.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\usrctrlCombo.resx">
+      <DependentUpon>usrctrlCombo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\usrctrlDate.resx">
+      <DependentUpon>usrctrlDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\usrctrlTextBox.resx">
+      <DependentUpon>usrctrlTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\WideTextBox.resx">
+      <DependentUpon>WideTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.Modules\ReadMe.txt" />
+    <Content Include="3.Classes\Readme.txt" />
+    <None Include="5.Bitmaps\down.png" />
+    <Content Include="5.Bitmaps\Lemon3.ico" />
+    <None Include="5.Bitmaps\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{377244C7-8550-4024-91A4-A7EEEB9B438A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>D25E0040</RootNamespace>
+    <AssemblyName>D25E0040</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>Lemon3.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>D44DF672157CF620B2ECDE012F744BC208CE1204</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Lemon3.pfx</ManifestKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\LEMON3\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948" />
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20062.17012, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20062.30142, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20062.104, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20062.60510, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="D00D0041, Version=3.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\LEMON3\D00D0041.dll</HintPath>
+    </Reference>
+    <Reference Include="D99D0041, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0241, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="D99D0341, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="D00D0041" />
+    <Import Include="D99D0041" />
+    <Import Include="D99D0241" />
+    <Import Include="D99D0341" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Forms\1.Main\D25F0000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\1.Main\D25F0000.Designer.vb">
+      <DependentUpon>D25F0000.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F0003.Designer.vb">
+      <DependentUpon>D25F0003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F0003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5554.designer.vb">
+      <DependentUpon>D25F5554.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5554.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5555.Designer.vb">
+      <DependentUpon>D25F5555.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5555.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5556.designer.vb">
+      <DependentUpon>D25F5556.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\2.System\D25F5556.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Forms\7.Other\frmConnection.Designer.vb">
+      <DependentUpon>frmConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.Forms\7.Other\frmConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Modules\D25X0000.vb" />
+    <Compile Include="2.Modules\D25X0001.vb" />
+    <Compile Include="2.Modules\D25X0002.vb" />
+    <Compile Include="2.Modules\D25X0003.vb" />
+    <Compile Include="2.Modules\D25X0004.vb" />
+    <Compile Include="4.UserControls\D25U2224.designer.vb">
+      <DependentUpon>D25U2224.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\D25U2224.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4.UserControls\D99U0000.designer.vb">
+      <DependentUpon>D99U0000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.UserControls\D99U0000.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1.Forms\1.Main\D25F0000.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>D25F0000.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\2.System\D25F0003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>D25F0003.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\2.System\D25F5554.resx">
+      <DependentUpon>D25F5554.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\2.System\D25F5555.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>D25F5555.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\2.System\D25F5556.resx">
+      <DependentUpon>D25F5556.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Forms\7.Other\frmConnection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\D25U2224.resx">
+      <DependentUpon>D25U2224.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.UserControls\D99U0000.resx">
+      <DependentUpon>D99U0000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Lemon3.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.Forms\1.Main\Readme.txt" />
+    <Content Include="1.Forms\2.System\Readme.txt" />
+    <Content Include="1.Forms\7.Other\Readme.txt" />
+    <Content Include="1.Forms\Readme.txt" />
+    <Content Include="2.Modules\Readme.txt" />
+    <Content Include="3.Classes\Readme.txt" />
+    <Content Include="4.UserControls\Readme.txt" />
+    <Content Include="Lemon3.ico" />
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.Forms\7.Other\Middle Form\" />
+    <Folder Include="6.Others\" />
+    <Folder Include="XCustom\" />
+    <Folder Include="XReports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
